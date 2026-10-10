@@ -1,0 +1,34 @@
+{
+  "baseline": {
+    "CD1_x100": 0.28249580666994845,
+    "CD2_x1e5": 0.5408124813039676,
+    "Precision": 0.9510737499999999,
+    "Recall": 0.94927775,
+    "F1_at_0_003": 0.9501500475727468,
+    "NC": 0.9831992121574284,
+    "triangles": 23267.55,
+    "boundary_edges": 44.8,
+    "boundary_edge_fraction": 0.010880439643601159,
+    "nonmanifold_edges": 71.675,
+    "nonmanifold_edge_fraction": 0.002183160948595368,
+    "degenerate_faces": 0.0,
+    "mean_sample_median_seconds": 0.3747590613551438,
+    "mean_extra_peak_mib": 2970.507922363281
+  },
+  "selected": {
+    "CD1_x100": 0.2825081041716183,
+    "CD2_x1e5": 0.5407042934369427,
+    "Precision": 0.9511714999999998,
+    "Recall": 0.9494025,
+    "F1_at_0_003": 0.9502605997376182,
+    "NC": 0.9832423755316348,
+    "triangles": 23253.75,
+    "boundary_edges": 47.2,
+    "boundary_edge_fraction": 0.010939131687460017,
+    "nonmanifold_edges": 47.725,
+    "nonmanifold_edge_fraction": 0.0014957736859685313,
+    "degenerate_faces": 0.0,
+    "mean_sample_median_seconds": 0.3748091216897592,
+    "mean_extra_peak_mib": 2970.5076416015627
+  }
+}

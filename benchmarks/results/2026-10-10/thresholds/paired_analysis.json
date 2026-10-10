@@ -1,0 +1,122 @@
+{
+  "CD1_x100": {
+    "mean_difference": 1.2297501669887578e-05,
+    "percentile_95_interval": [
+      -0.00012781620449485245,
+      0.00015224769201521618
+    ],
+    "selected_higher": 18,
+    "selected_lower": 20,
+    "equal": 2
+  },
+  "CD2_x1e5": {
+    "mean_difference": -0.0001081878670250655,
+    "percentile_95_interval": [
+      -0.0005976912412247779,
+      0.00038093622100222435
+    ],
+    "selected_higher": 17,
+    "selected_lower": 21,
+    "equal": 2
+  },
+  "Precision": {
+    "mean_difference": 9.774999999998812e-05,
+    "percentile_95_interval": [
+      -0.00010250000000000279,
+      0.0002917499999999852
+    ],
+    "selected_higher": 20,
+    "selected_lower": 16,
+    "equal": 4
+  },
+  "Recall": {
+    "mean_difference": 0.00012474999999998737,
+    "percentile_95_interval": [
+      -0.00022777500000000712,
+      0.0004715062499999829
+    ],
+    "selected_higher": 20,
+    "selected_lower": 18,
+    "equal": 2
+  },
+  "F1_at_0_003": {
+    "mean_difference": 0.00011055216487146913,
+    "percentile_95_interval": [
+      -0.0001044336157743128,
+      0.0003307797002005929
+    ],
+    "selected_higher": 20,
+    "selected_lower": 18,
+    "equal": 2
+  },
+  "NC": {
+    "mean_difference": 4.3163374206658946e-05,
+    "percentile_95_interval": [
+      -2.828521304062803e-05,
+      0.00011038209868600372
+    ],
+    "selected_higher": 26,
+    "selected_lower": 12,
+    "equal": 2
+  },
+  "triangles": {
+    "mean_difference": -13.8,
+    "percentile_95_interval": [
+      -18.05,
+      -10.05
+    ],
+    "selected_higher": 0,
+    "selected_lower": 38,
+    "equal": 2
+  },
+  "boundary_edges": {
+    "mean_difference": 2.4,
+    "percentile_95_interval": [
+      0.375,
+      4.575
+    ],
+    "selected_higher": 23,
+    "selected_lower": 10,
+    "equal": 7
+  },
+  "boundary_edge_fraction": {
+    "mean_difference": 5.8692043858857965e-05,
+    "percentile_95_interval": [
+      -8.770603166247128e-07,
+      0.00011879970444025483
+    ],
+    "selected_higher": 29,
+    "selected_lower": 9,
+    "equal": 2
+  },
+  "nonmanifold_edges": {
+    "mean_difference": -23.95,
+    "percentile_95_interval": [
+      -31.425625,
+      -17.399375000000006
+    ],
+    "selected_higher": 0,
+    "selected_lower": 38,
+    "equal": 2
+  },
+  "nonmanifold_edge_fraction": {
+    "mean_difference": -0.0006873872626268369,
+    "percentile_95_interval": [
+      -0.0008932088178671553,
+      -0.0005096656192469252
+    ],
+    "selected_higher": 0,
+    "selected_lower": 38,
+    "equal": 2
+  },
+  "degenerate_faces": {
+    "mean_difference": 0.0,
+    "percentile_95_interval": [
+      0.0,
+      0.0
+    ],
+    "selected_higher": 0,
+    "selected_lower": 0,
+    "equal": 40
+  }
+}

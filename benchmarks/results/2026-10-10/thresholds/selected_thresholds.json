@@ -1,0 +1,15 @@
+{
+  "selected": {
+    "confidence_top1": 0.8,
+    "confidence_top2": 0.6,
+    "face_angle": 120.0
+  },
+  "selected_identifier": "t1_0.8_t2_0.6_angle_120",
+  "baseline": {
+    "confidence_top1": 0.8,
+    "confidence_top2": 0.5,
+    "face_angle": 120.0
+  },
+  "selection_rule": "Maximize mean development F1 subject to precision >= baseline - 0.002, CD1 <= baseline * 1.01, and nonmanifold_edge_fraction <= baseline + 0.001; tie prefers baseline then smaller parameter departure. If none improves F1, keep baseline.",
+  "evaluated_test_samples_at_selection": 0
+}

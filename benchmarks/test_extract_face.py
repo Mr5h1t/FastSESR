@@ -67,6 +67,37 @@ class ExtractionEquivalence(unittest.TestCase):
             scores.fill_(5.)
             self.compare(p, scores, idx)
 
+    def test_configurable_thresholds_change_selected_faces(self):
+        points = torch.tensor([[0., 0., 0.], [1., 0., 0.],
+                               [0., 1., 0.], [0., -1., 0.]])
+        indices = torch.tensor([[0, 1, 2, 3]])
+        scores = torch.full((1, 3, 3), -20.)
+        scores[0, 0, 1] = torch.logit(torch.tensor(.75))
+        scores[0, 0, 2] = torch.logit(torch.tensor(.55))
+        self.assertEqual(len(SurfExtract()(points, scores, indices)), 0)
+        self.assertEqual(len(SurfExtract(.7, .5)(points, scores, indices)), 2)
+        self.assertEqual(len(SurfExtract(.7, .6)(points, scores, indices)), 0)
+
+    def test_angle_parameter_changes_pair_acceptance(self):
+        import math
+        radians = math.radians(100)
+        points = torch.tensor([[0., 0., 0.], [1., 0., 0.],
+                               [0., 1., 0.], [0., math.cos(radians), math.sin(radians)]])
+        indices = torch.tensor([[0, 1, 2, 3]])
+        scores = torch.full((1, 3, 3), -20.)
+        scores[0, 0, 1] = 5.
+        scores[0, 0, 2] = 4.
+        self.assertEqual(len(SurfExtract(angle=90)(points, scores, indices)), 2)
+        self.assertEqual(len(SurfExtract(angle=120)(points, scores, indices)), 0)
+
+    def test_invalid_thresholds_rejected(self):
+        for kwargs in ({'confidence_top1': -0.1}, {'confidence_top2': 1.1},
+                       {'confidence_top1': float('nan')}, {'angle': 0},
+                       {'angle': 180}, {'angle': float('nan')}):
+            with self.subTest(kwargs=kwargs), self.assertRaises(ValueError):
+                SurfExtract(**kwargs)
+
+
 
 if __name__ == '__main__':
     unittest.main()

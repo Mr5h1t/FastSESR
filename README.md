@@ -211,6 +211,25 @@ python S2_reconstruct.py --use_loon_unet --loon_unet_ckpt runs/S2_train/<TIME>/m
 python S2_reconstruct.py --use_loon_unet --loon_unet_ckpt runs/S2_train/<TIME>/model_best.pth   --dataset MGN  --gpu <GPU>
 ```
 
+### Optional face extraction thresholds
+
+For `--use_loon_unet` or `--use_loon`, triangle filtering supports:
+
+```bash
+--confidence_top1 0.8 --confidence_top2 0.5 --face_angle 120
+```
+
+These defaults preserve the original mesh outputs. Confidence values must be
+between 0 and 1; the angle must be strictly between 0 and 180 degrees. The actual
+settings are saved to `face_extraction_config.json` in the output directory.
+
+A local experiment selected `--confidence_top2 0.6` using 16 development shapes
+and evaluated it on 40 separate ABC shapes. Mean non-manifold edge count fell
+from 71.675 to 47.725, while mean boundary edge count rose from 44.8 to 47.2.
+The F1 change was very small; this is an optional experimental setting, and the
+defaults remain unchanged. See the [experiment report](benchmarks/results/2026-10-10/thresholds/REPORT.md)
+and [comparison table](benchmarks/results/2026-10-10/thresholds/comparison.csv).
+
 ### Evaluate Reconstruction Quality
 
   - shape evaluation (sample 100K points): 

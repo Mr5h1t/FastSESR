@@ -1,0 +1,18 @@
+{
+  "development_shapes": 16,
+  "configurations": 13,
+  "development_metrics_rows": 208,
+  "test_shapes": 40,
+  "test_metrics_rows": 80,
+  "full_pipeline_timing_runs": 240,
+  "regression_tests_passed": 9,
+  "baseline_output_byte_identical_to_original_pairs": 40,
+  "quality_means_recomputed": true,
+  "edge_incidence_counts_recomputed_on_all_80_meshes": true,
+  "selection_independently_recomputed_from_development_only": true,
+  "development_test_cad_document_overlap": 0,
+  "source_and_weight_hashes_match": true,
+  "real_cli_selected_output_byte_identical_to_experiment": true,
+  "real_cli_selected_output_differs_from_baseline": true,
+  "report_source_sha256": "bdd8c1fea099dea77b5f4299844376bf3c1cf8104b74845aa272219dc36b48e8"
+}

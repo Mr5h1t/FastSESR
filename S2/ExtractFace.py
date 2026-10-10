@@ -8,9 +8,13 @@ class SurfExtract(nn.Module):
 
     def __init__(self, confidence_top1=0.8, confidence_top2=0.5, angle=120):
         super().__init__()
-        self.conf_1 = confidence_top1  
-        self.conf_2 = confidence_top2
-        self.angle = angle
+        if not 0 <= confidence_top1 <= 1 or not 0 <= confidence_top2 <= 1:
+            raise ValueError("Confidence thresholds must be between 0 and 1.")
+        if not 0 < angle < 180:
+            raise ValueError("Face angle must be strictly between 0 and 180 degrees.")
+        self.conf_1 = float(confidence_top1)
+        self.conf_2 = float(confidence_top2)
+        self.angle = float(angle)
     
     def _torch_meshgrid_2D(self, input):
         assert(input.dim()==2)
@@ -66,7 +70,7 @@ class SurfExtract(nn.Module):
 
         confidence_1 = nn.Sigmoid()(pred_logits[:,:,0])
         confidence_2 = nn.Sigmoid()(pred_logits[:,:,1])
-        valid_rows, valid_cols = torch.where((confidence_1>0.8) & (confidence_2>0.5) & (~flip_sign))
+        valid_rows, valid_cols = torch.where((confidence_1>self.conf_1) & (confidence_2>self.conf_2) & (~flip_sign))
         pred_triangles = sorted_candidate_triangles[valid_rows, valid_cols,:2,:]
         pred_triangles = pred_triangles.reshape(-1,3)
         pred_triangles = torch.sort(pred_triangles, dim=-1).values

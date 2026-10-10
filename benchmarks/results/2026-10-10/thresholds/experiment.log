@@ -1,0 +1,62 @@
+LOAD pretrained original CLI
+/home/syx/data/miniconda3/envs/dcx/lib/python3.11/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Reconstruct ABC_test:   0%|          | 0/1 [00:00<?, ?file/s]Reconstruct ABC_test:   0%|          | 0/1 [00:00<?, ?file/s, time=0.45s, method=LOON-UNet]Reconstruct ABC_test: 100%|██████████| 1/1 [00:00<00:00,  2.09file/s, time=0.45s, method=LOON-UNet]Reconstruct ABC_test: 100%|██████████| 1/1 [00:00<00:00,  2.09file/s, time=0.45s, method=LOON-UNet]
+DEVELOPMENT 1/16 00053139_1945e4f3b59145d890905b9d_trimesh_009.ply
+DEVELOPMENT 2/16 00035473_e5d0add05e794cab96bf1a71_trimesh_000.ply
+DEVELOPMENT 3/16 00020585_63916f67a00044a894aae2ff_trimesh_000.ply
+DEVELOPMENT 4/16 00056111_b885cff0664c4666975d653e_trimesh_000.ply
+DEVELOPMENT 5/16 00051873_920d8a06814e4ddeaa012a23_trimesh_007.ply
+DEVELOPMENT 6/16 00010386_289cf5e5fc0246f19cd8bb75_trimesh_001.ply
+DEVELOPMENT 7/16 00034428_01d7addfe23343f999026f90_trimesh_000.ply
+DEVELOPMENT 8/16 00058754_ec6875c3bb9d405789785b2b_trimesh_000.ply
+DEVELOPMENT 9/16 00041223_5b0154277ee14987bdbed000_trimesh_010.ply
+DEVELOPMENT 10/16 00029044_914cae8642e24d87ad71989f_trimesh_005.ply
+DEVELOPMENT 11/16 00031999_7231bfdc871d47feb9a4489c_trimesh_000.ply
+DEVELOPMENT 12/16 00036900_4893027908cc456f82087c02_trimesh_000.ply
+DEVELOPMENT 13/16 00026983_3f5d177b1de9411b9e5c4d0e_trimesh_000.ply
+DEVELOPMENT 14/16 00017462_28a7687e4fae472399c06676_trimesh_005.ply
+DEVELOPMENT 15/16 00053548_6878aa6081024ca98c309660_trimesh_008.ply
+DEVELOPMENT 16/16 00022672_f05484a2894d48eca5d703e4_trimesh_003.ply
+FROZEN SELECTED {"selected": {"confidence_top1": 0.8, "confidence_top2": 0.6, "face_angle": 120.0}, "selected_identifier": "t1_0.8_t2_0.6_angle_120", "baseline": {"confidence_top1": 0.8, "confidence_top2": 0.5, "face_angle": 120.0}, "selection_rule": "Maximize mean development F1 subject to precision >= baseline - 0.002, CD1 <= baseline * 1.01, and nonmanifold_edge_fraction <= baseline + 0.001; tie prefers baseline then smaller parameter departure. If none improves F1, keep baseline.", "evaluated_test_samples_at_selection": 0}
+TEST 1/40 00005358_8b751460405b49f789a2e056_trimesh_001.ply
+TEST 2/40 00037973_64f4a654731c4c01a8bbb127_trimesh_202.ply
+TEST 3/40 00016198_ff6ba0455c2a40619f00d3b9_trimesh_001.ply
+TEST 4/40 00047744_abd9c1f5bc6b4f04a4747989_trimesh_000.ply
+TEST 5/40 00045689_16e9b2cc155441819fde8011_trimesh_002.ply
+TEST 6/40 00040928_0a8d281d67864a32a6102316_trimesh_000.ply
+TEST 7/40 00036593_c8fd129e1f1444efa0092b20_trimesh_000.ply
+TEST 8/40 00027712_5b5cff3cb8cc477a822df029_trimesh_000.ply
+TEST 9/40 00048946_c4a20dbdfc51458baacf463e_trimesh_003.ply
+TEST 10/40 00047873_5e6f057be0944c26a8180b54_trimesh_001.ply
+TEST 11/40 00005888_2bf953ef98e240b99331861a_trimesh_001.ply
+TEST 12/40 00014371_4898b9df95db421ca3eeae4d_trimesh_000.ply
+TEST 13/40 00028387_0d88a10139cf4468acc4c155_trimesh_000.ply
+TEST 14/40 00043337_3a8d775e4dc0437cbf3b85dc_trimesh_010.ply
+TEST 15/40 00031187_94d7a443e81447829c2721d7_trimesh_001.ply
+TEST 16/40 00040258_a8cb0da2231a4af09f37a487_trimesh_000.ply
+TEST 17/40 00054968_8724be9efc0243b2941170a3_trimesh_002.ply
+TEST 18/40 00057151_017eee97a7f2411aa5c1cc82_trimesh_001.ply
+TEST 19/40 00002587_cc1cd1b241b3486281c6e9f1_trimesh_001.ply
+TEST 20/40 00057193_e9e0403c32ec4c8e85736034_trimesh_025.ply
+TEST 21/40 00024607_f0b0a2f166434b47bc3e3a62_trimesh_003.ply
+TEST 22/40 00030088_794d237457da437eab055881_trimesh_006.ply
+TEST 23/40 00015727_bca56983eee140db9aa4c9a1_trimesh_068.ply
+TEST 24/40 00028499_dae19cca317243e3bbc215dd_trimesh_097.ply
+TEST 25/40 00007777_a18dcf0dd60f4b0f91f55385_trimesh_000.ply
+TEST 26/40 00042377_609d989b73df48108687cda5_trimesh_031.ply
+TEST 27/40 00024468_f52d73d872894d93ba94a9d0_trimesh_000.ply
+TEST 28/40 00035495_74a037c05d3b4826887c058a_trimesh_001.ply
+TEST 29/40 00026594_95b4366d92834ce18d58e45c_trimesh_047.ply
+TEST 30/40 00048943_c4a20dbdfc51458baacf463e_trimesh_000.ply
+TEST 31/40 00028713_2f001acb8aef49388fe7678b_trimesh_004.ply
+TEST 32/40 00021080_1d8d55bf8ae64e74b9fa2eba_trimesh_000.ply
+TEST 33/40 00006645_c82bee0c122742d9b2741aef_trimesh_004.ply
+TEST 34/40 00053012_11c1054cb78746d29012c920_trimesh_003.ply
+TEST 35/40 00042036_2324de94313d4a5988f28fab_trimesh_015.ply
+TEST 36/40 00043427_01f3c3df83f84d37ad3012f7_trimesh_000.ply
+TEST 37/40 00018767_043d7c8b4cfe43969c461aaa_trimesh_004.ply
+TEST 38/40 00021867_0c7f74973c8b453dadde1790_trimesh_000.ply
+TEST 39/40 00029714_d8f44c21c409440295803763_trimesh_000.ply
+TEST 40/40 00019800_b8a599e52e5448a6874c95f7_trimesh_000.ply
+SUMMARY {"baseline": {"CD1_x100": 0.28249580666994845, "CD2_x1e5": 0.5408124813039676, "Precision": 0.9510737499999999, "Recall": 0.94927775, "F1_at_0_003": 0.9501500475727468, "NC": 0.9831992121574284, "triangles": 23267.55, "boundary_edges": 44.8, "boundary_edge_fraction": 0.010880439643601159, "nonmanifold_edges": 71.675, "nonmanifold_edge_fraction": 0.002183160948595368, "degenerate_faces": 0.0, "mean_sample_median_seconds": 0.3747590613551438, "mean_extra_peak_mib": 2970.507922363281}, "selected": {"CD1_x100": 0.2825081041716183, "CD2_x1e5": 0.5407042934369427, "Precision": 0.9511714999999998, "Recall": 0.9494025, "F1_at_0_003": 0.9502605997376182, "NC": 0.9832423755316348, "triangles": 23253.75, "boundary_edges": 47.2, "boundary_edge_fraction": 0.010939131687460017, "nonmanifold_edges": 47.725, "nonmanifold_edge_fraction": 0.0014957736859685313, "degenerate_faces": 0.0, "mean_sample_median_seconds": 0.3748091216897592, "mean_extra_peak_mib": 2970.5076416015627}}

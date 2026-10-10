@@ -33,7 +33,16 @@ parser.add_argument('--data_root', type=str, default='./Data', help='Root folder
 parser.add_argument('--test_list', type=str, default='', help='Optional text file with list of pointcloud basenames (one per line) to reconstruct')
 parser.add_argument('--out_dir', type=str, default='', help='Optional output directory for reconstructed meshes (overrides results/<dataset>/)')
 parser.add_argument('--delta', type=float, default=None,help='Override surface voxel size delta used by PCReconSet; if set, overrides checkpoint meta')
+parser.add_argument('--confidence_top1', type=float, default=0.8, help='Top-1 triangle confidence threshold (default: 0.8)')
+parser.add_argument('--confidence_top2', type=float, default=0.5, help='Top-2 triangle confidence threshold (default: 0.5)')
+parser.add_argument('--face_angle', type=float, default=120.0, help='Angle condition in degrees for the top-2 triangle pair (default: 120)')
 opt = parser.parse_args()
+try:
+    SurfExtract(opt.confidence_top1, opt.confidence_top2, opt.face_angle)
+except ValueError as error:
+    parser.error(str(error))
+if not (opt.use_loon_unet or opt.use_loon) and (opt.confidence_top1, opt.confidence_top2, opt.face_angle) != (0.8, 0.5, 120.0):
+    parser.error('Custom face thresholds require --use_loon_unet or --use_loon.')
 
 
 
@@ -433,6 +442,12 @@ if __name__=='__main__':
             p.requires_grad_(False)
         OffsetOPTer = None
         loon_unet = None
+    if opt.use_loon_unet or opt.use_loon:
+        face_config = {'confidence_top1': opt.confidence_top1,
+                       'confidence_top2': opt.confidence_top2, 'face_angle': opt.face_angle}
+        print(f"[Recon] Face extraction config: {face_config}")
+        with open(os.path.join(results_folder, 'face_extraction_config.json'), 'w') as stream:
+            json.dump(face_config, stream, indent=2)
     runtime = np.zeros(len(test_files))
     point_counts = np.zeros(len(test_files), dtype=np.int64)
     stats_file = None
@@ -466,7 +481,7 @@ if __name__=='__main__':
             final_offsets = dP0_b3n.squeeze(0).t().contiguous() # [N,3]
 
             knn_idx_dev = knn_indices.to(device)
-            extractor = SurfExtract()
+            extractor = SurfExtract(opt.confidence_top1, opt.confidence_top2, opt.face_angle)
             N_total = points_dev.shape[0]
             step = max(1, opt.chunk_size)
             all_tris = []
@@ -499,7 +514,7 @@ if __name__=='__main__':
             final_offsets = loon(points_dev, model, create_graph=False)  # [N, 3]
 
             knn_idx_dev = knn_indices.to(device)
-            extractor = SurfExtract()
+            extractor = SurfExtract(opt.confidence_top1, opt.confidence_top2, opt.face_angle)
             N_total = points_dev.shape[0]
             step = max(1, opt.chunk_size)
             all_tris = []
