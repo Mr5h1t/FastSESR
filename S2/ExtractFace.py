@@ -27,16 +27,20 @@ class SurfExtract(nn.Module):
         return cand_triangles
     
     def forward(self, points, pred_logits, knn_indices):
-        candidate_triangles = self._build_candidate_triangles(knn_indices)
-
         N, K = knn_indices.shape
         pred_logits = pred_logits.reshape(N, K-1, K-1)
-        candidate_triangles = candidate_triangles.reshape(N, K-1, K-1, 3)
         pred_logits, indices = torch.sort(pred_logits, dim=-1, descending=True) # sort from confidence high to low
-
-        sorted_candidate_triangles = torch.stack([torch.gather(candidate_triangles[...,0], 2, indices), 
-                                                 torch.gather(candidate_triangles[...,1], 2, indices),
-                                                 torch.gather(candidate_triangles[...,2], 2, indices)], dim=3)
+        # Only the first two candidates per edge are consumed below. Keep the
+        # original sort so tied logits select the same neighbors as before,
+        # but construct just those triangles instead of all (K-1)^2 triples.
+        neighbors = knn_indices[:, 1:]
+        other_vertices = torch.gather(
+            neighbors[:, None, :].expand(-1, K-1, -1), 2, indices[:, :, :2])
+        sorted_candidate_triangles = torch.stack([
+            knn_indices[:, :1, None].expand(-1, K-1, 2),
+            neighbors[:, :, None].expand(-1, -1, 2),
+            other_vertices,
+        ], dim=-1)
         
         # get flip sign of the top 2 triangles
         triangle_A = sorted_candidate_triangles[:,:,0,:]     # top 1st triangle

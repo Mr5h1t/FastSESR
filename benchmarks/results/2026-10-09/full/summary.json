@@ -1,0 +1,52 @@
+{
+  "reconstruction": {
+    "original": {
+      "mean_sample_median_seconds": 0.4169439711375162,
+      "median_sample_median_seconds": 0.4353936202824116,
+      "mean_extra_peak_mib": 2970.075390625,
+      "max_extra_peak_mib": 3020.4306640625
+    },
+    "improved": {
+      "mean_sample_median_seconds": 0.4065486355917528,
+      "median_sample_median_seconds": 0.41948450403288007,
+      "mean_extra_peak_mib": 2970.075390625,
+      "max_extra_peak_mib": 3020.4306640625
+    },
+    "time_reduction_pct": 2.493221215647412,
+    "memory_reduction_pct": 0.0
+  },
+  "extraction": {
+    "original": {
+      "mean_sample_median_seconds": 0.00265068500302732,
+      "median_sample_median_seconds": 0.0026680855080485344,
+      "mean_extra_peak_mib": 379.18970947265626,
+      "max_extra_peak_mib": 384.7568359375
+    },
+    "improved": {
+      "mean_sample_median_seconds": 0.0009557073470205068,
+      "median_sample_median_seconds": 0.0009487112984061241,
+      "mean_extra_peak_mib": 68.5248291015625,
+      "max_extra_peak_mib": 69.63232421875
+    },
+    "time_reduction_pct": 63.94489175707398,
+    "memory_reduction_pct": 81.92861583800341
+  },
+  "accuracy": {
+    "original": {
+      "CD1_x100": 0.2825698399805808,
+      "CD2_x1e5": 0.5411048347194437,
+      "F1_at_0.003": 0.9500497396623985,
+      "NC": 0.9832456125386905,
+      "triangles": 23267.55
+    },
+    "improved": {
+      "CD1_x100": 0.2825698399805808,
+      "CD2_x1e5": 0.5411048347194437,
+      "F1_at_0.003": 0.9500497396623985,
+      "NC": 0.9832456125386905,
+      "triangles": 23267.55
+    }
+  },
+  "all_meshes_exactly_equal": true,
+  "sample_count": 40
+}

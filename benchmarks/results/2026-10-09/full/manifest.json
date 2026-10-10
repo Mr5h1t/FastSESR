@@ -1,0 +1,437 @@
+{
+  "sample_selection_manifest": "/home/syx/research_audit/2026-10-09/selected_abc_test.json",
+  "sample_selection_sha256": "2f653f7b28d3cdc8e8a0f619f83472c63442b8a42db824feedf6617bc19d5389",
+  "config": {
+    "delta": 0.0,
+    "rescale_delta": false,
+    "chunk_size": 2000,
+    "knn": 50,
+    "pretrained_active_keys": 183,
+    "pretrained_missing_active_keys": [],
+    "unused_checkpoint_keys": [
+      "bottleneck.gat_cell.att_mlp.0.bias",
+      "bottleneck.gat_cell.att_mlp.0.weight",
+      "bottleneck.gat_cell.att_mlp.2.bias",
+      "bottleneck.gat_cell.att_mlp.2.weight",
+      "bottleneck.gat_cell.lin_k.weight",
+      "bottleneck.gat_cell.lin_q.weight",
+      "bottleneck.gat_cell.lin_v.weight",
+      "bottleneck.gat_cell.out_mlp.0.bias",
+      "bottleneck.gat_cell.out_mlp.0.weight",
+      "bottleneck.gat_cell.out_mlp.2.bias",
+      "bottleneck.gat_cell.out_mlp.2.weight",
+      "bottleneck.gat_cell.step_scale",
+      "dec_flat.conv1.bias",
+      "dec_flat.conv1.weight",
+      "dec_flat.conv2.bias",
+      "dec_flat.conv2.weight",
+      "dec_flat.gn1.bias",
+      "dec_flat.gn1.weight",
+      "enc.l5.conv.weight",
+      "enc.l5.gn.bias",
+      "enc.l5.gn.weight",
+      "fp32.mlp.0.weight",
+      "fp32.mlp.1.bias",
+      "fp32.mlp.1.weight",
+      "fp32.mlp.3.weight",
+      "fp32.mlp.4.bias",
+      "fp32.mlp.4.weight",
+      "fp32.mlp.6.bias",
+      "fp32.mlp.6.weight"
+    ],
+    "checkpoint_args": {
+      "dataset": "ABC_train",
+      "delta": 0.0,
+      "rescale_delta": false,
+      "unet_k": 16,
+      "unet_ratio1": 0.25,
+      "unet_ratio2": 0.25,
+      "unet_hidden": 64,
+      "unet_T": 2,
+      "unet_K": 50,
+      "use_point_transformer": true,
+      "use_gat": false,
+      "gat_heads": 4,
+      "no_pyramid": true,
+      "Lembed": 8,
+      "use_q_as_feat": true,
+      "use_q_for_modulation": false,
+      "enable_quality_modulator": false,
+      "enable_q_feat": true,
+      "share_offset_former": true
+    }
+  },
+  "seed": 20261009,
+  "reconstruction_repeats": 5,
+  "extraction_repeats": 25,
+  "surface_samples": 100000,
+  "python": "3.11.15 (main, Jun 11 2026, 15:20:16) [GCC 14.3.0]",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "gpu_before": "NVIDIA GeForce RTX 5090, 32607 MiB, 5193 MiB, 20 %",
+  "timing_scope": "GPU reconstruction through CPU mesh assembly; excludes disk reads, PC preprocessing, weight loading and mesh writes",
+  "extraction_scope": "first up-to-2000-point chunk of real logits for each shape",
+  "pair_order": "alternates original/improved order across repeats and shapes",
+  "source_sha256": {
+    "S1_train.py": "7962ac95f9ed3e5bb2d8acd87bb335e4a3f7528d6d771a6632967cd962fa02e4",
+    "main_eval_acc.py": "2e463221124bf7422c10c80208f0a77a120bd4b6da11be2bdb714e96385a728a",
+    "S2_reconstruct.py": "c94c5458cef4ef08a33f66d07794c4451f768153cdf08be1156f1cbfec22a2dc",
+    "dataset/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "dataset/pc_recon.py": "836519e3b6b71abb5b0e948adfa49994f58af1f38081eb48cc77504c170ed978",
+    "dataset/pc_recon_with_gt.py": "a5390a1597ef86fc61bf9858400deda0623becfcfb331ea174da5181b75b4cda",
+    "dataset/mesh_train.py": "3dbbd7ca0d3e74d9b11f5bd29d31a40f1ca1cb7a2d72b40d59fc98bdecae6168",
+    "scripts/generate_fixed_splits.py": "c880c2b4c00517e4f6ae846e9aa1c4ca9c755a7ec1e88dc49238578fd7479e20",
+    "scripts/loso_runner.py": "4790a6cca544ca93a99d98e65026c728417fa84a98dfe4899bcb3f75e2898b0f",
+    "scripts/eval_kfold_aggregate.py": "e60a47ba061ecfeaa89af7ab52ab9988fb0cb4c0c80e0442663ac14ad007a767",
+    "scripts/convert_json_splits_to_kfold_lists.py": "8f4669948298993c6871374e8be9888e3ea3ce7999e6392492cc4870703e3fa7",
+    "scripts/kfold_runner.py": "9b6c7db08e89951463df4649911b24fd1ea574040fa5df5a5034bfcb9790a0b0",
+    "scripts/eval_multi.py": "b0bf3cbde7e03d70a561567df8637a416428dd405e8c23243dbfa16bb7a71b7a",
+    "benchmarks/compare_extract_face.py": "1d0575fa2e7c9db0d9af4db90ad64f3552cdd27f0a534d5122ecabb7e7b4543a",
+    "benchmarks/test_extract_face.py": "819c1115bd85250302a374aef1049a3bb4b0c639274e457b0b7aefbf3d97d26c",
+    "benchmarks/baselines/extract_face_before.py": "8a06f68cb56fc73fb845021d21807df96909242faeb235118d0470a432aeafdc",
+    "utils/augmentor.py": "d7c77b1ccb472e03dce6163c53729b7100456e55791a6a640329daf3def74b59",
+    "utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "utils/rot_helpers.py": "75b2f3fce19c5e453bb4e1e74711ea8d44e9e5797f7432a07224e21a583f5898",
+    "S2/ExtractFace.py": "f347549e31cbc4495dda5a9a5daa8be8674adafe112250da42e33ba9bdad74f7",
+    "S2/LoonUNet.py": "53da56f04cbf1b6b0cc22af600a48a97a63be4f133d6a4fb73e0e64ce359b0c7",
+    "S2/ReconNet.py": "72edc5bfd19d3109eacfde86ce4caf1bf180b15376404d4b29156722d227ff53",
+    "S2/S2_train_loon_unet.py": "4ff633175f71119286f095b4f856e4c0af9125dfda6c2800ee72f2ce1d9f8e42",
+    "S2/loss_unsupervised.py": "13b815ea17d0e5af7dfc5f891795ff4fd9d310590be5e406e84fa21fae791079",
+    "eval/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "eval/surf_acc.py": "d56407f879a2cff4ce90ecefbc3731d675f58762bc871925673bdd24368465b5",
+    "S1/loss_supervised.py": "cf962198d3d93ea76f8ccd922df85ad1f791c4993bf6b5babdae30ffe7a558c5",
+    "S1/fitModel.py": "61f8a7b8dc2c310dd5b306f3b5a8e7d70843451c8e148ae0307757f7790267ed",
+    "S1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "S1/BaseNet.py": "6f342818fde5960ddba1e1161f629bc6778b0f498f2d87448ddb9ddaa212fa54"
+  },
+  "weight_sha256": {
+    "trained_models/model_knn50.pth": "195d7206b8c422e0c759f2f1ddaef515ee280270bf1339997c2cc7382820fcfe",
+    "runs/S2_train/model_best.pth": "44ace7062d9917374a6b0fcc742a441686bf5f1af522aeb77b5aebccc3f36359",
+    "S1_training/model_k50/best_model": "724e36b8ad81740d7474b3e9648d599c8264012273f6de69a2d0dbfc899ccb3e"
+  },
+  "samples": [
+    {
+      "name": "00005358_8b751460405b49f789a2e056_trimesh_001.ply",
+      "vertices": 1004,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00005358_8b751460405b49f789a2e056_trimesh_001.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00005358_8b751460405b49f789a2e056_trimesh_001.ply",
+      "pointcloud_sha256": "3505bdadc6e6ae0cc2ede1a4efd246805b81a8884d6b523cd2ab322af4e48ab8",
+      "ground_truth_sha256": "26da3ce065e4226f00cf4fcc3ab8bd40601006dedb960bb22de002c57b752073"
+    },
+    {
+      "name": "00037973_64f4a654731c4c01a8bbb127_trimesh_202.ply",
+      "vertices": 1839,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00037973_64f4a654731c4c01a8bbb127_trimesh_202.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00037973_64f4a654731c4c01a8bbb127_trimesh_202.ply",
+      "pointcloud_sha256": "0af4778f6416b5997a99d3ab87e226d1497d517a24f6ce204835328eecb73388",
+      "ground_truth_sha256": "4d4547b8b2a540c40c4cc4129a6d1e53f8deb3f40dd7e4d71697edd7a93c7012"
+    },
+    {
+      "name": "00016198_ff6ba0455c2a40619f00d3b9_trimesh_001.ply",
+      "vertices": 2892,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00016198_ff6ba0455c2a40619f00d3b9_trimesh_001.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00016198_ff6ba0455c2a40619f00d3b9_trimesh_001.ply",
+      "pointcloud_sha256": "3728bf8e562a8c6c9bcc3e2440a66a583219fb1cf83f3bd065bf3889c0d89460",
+      "ground_truth_sha256": "0a1f1d36deb697fe19dced53432b2d55127ee90a9262b669531514e02385992c"
+    },
+    {
+      "name": "00047744_abd9c1f5bc6b4f04a4747989_trimesh_000.ply",
+      "vertices": 3886,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00047744_abd9c1f5bc6b4f04a4747989_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00047744_abd9c1f5bc6b4f04a4747989_trimesh_000.ply",
+      "pointcloud_sha256": "462b11eb980bb5a3dc141248916ee030929f576181e15f744e7811db368d6806",
+      "ground_truth_sha256": "1d6523dd997b98ddba54c20989bb72c7bfdd6ecf72ad9017674bf015374a7326"
+    },
+    {
+      "name": "00045689_16e9b2cc155441819fde8011_trimesh_002.ply",
+      "vertices": 4566,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00045689_16e9b2cc155441819fde8011_trimesh_002.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00045689_16e9b2cc155441819fde8011_trimesh_002.ply",
+      "pointcloud_sha256": "c9dd5c7e6e7eef000477bd48c604665ea7f07967b76b2b2a34b68238626554f1",
+      "ground_truth_sha256": "a02ad4c7b7ce923fd46cdc46513912157e0681bad2ee8457d79909cf6430fe2f"
+    },
+    {
+      "name": "00040928_0a8d281d67864a32a6102316_trimesh_000.ply",
+      "vertices": 5249,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00040928_0a8d281d67864a32a6102316_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00040928_0a8d281d67864a32a6102316_trimesh_000.ply",
+      "pointcloud_sha256": "62d17e24b28f01b16e4eacca2ef09ff635f2e3abd9c0c57680c6a840bd1a9178",
+      "ground_truth_sha256": "4a24ad7a86ef34938dd4c38d02ed5f958006ffa7b909ce73dce6d2453657af2a"
+    },
+    {
+      "name": "00036593_c8fd129e1f1444efa0092b20_trimesh_000.ply",
+      "vertices": 5922,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00036593_c8fd129e1f1444efa0092b20_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00036593_c8fd129e1f1444efa0092b20_trimesh_000.ply",
+      "pointcloud_sha256": "2c09df3b48383f0f475a47b7766531d4e3cfc7291a0d92f3c58c6d32934df504",
+      "ground_truth_sha256": "07330d1cc45ce7522472f401a8b0e7fcbb49ea84784aa6c77c4961efdc92fc92"
+    },
+    {
+      "name": "00027712_5b5cff3cb8cc477a822df029_trimesh_000.ply",
+      "vertices": 6462,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00027712_5b5cff3cb8cc477a822df029_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00027712_5b5cff3cb8cc477a822df029_trimesh_000.ply",
+      "pointcloud_sha256": "d8ac5b754450fb8d4092d6d9180531aa7a4e180cc18cd5a14c2468859568a79d",
+      "ground_truth_sha256": "ae5ba571ebe9afd1904782f80ece8bdf82500b14295a9eeaa65b86c2f842eb1f"
+    },
+    {
+      "name": "00048946_c4a20dbdfc51458baacf463e_trimesh_003.ply",
+      "vertices": 7064,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00048946_c4a20dbdfc51458baacf463e_trimesh_003.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00048946_c4a20dbdfc51458baacf463e_trimesh_003.ply",
+      "pointcloud_sha256": "ad756c0304ac2e2afa95812cb008bc2b689d91fbb8697ca25b9e967d975a31c9",
+      "ground_truth_sha256": "5685538e477d83a5699c21466645499a78fd9a3094eb310616e78daf122678af"
+    },
+    {
+      "name": "00047873_5e6f057be0944c26a8180b54_trimesh_001.ply",
+      "vertices": 7694,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00047873_5e6f057be0944c26a8180b54_trimesh_001.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00047873_5e6f057be0944c26a8180b54_trimesh_001.ply",
+      "pointcloud_sha256": "478546fd3e2ffb346cd1c303aedc4b5819905de322585c99656eda0e835580f9",
+      "ground_truth_sha256": "d79bc638d01f7d4e4cb1e04bab5776fe9aabde975bc7ba9520e0ef29c788d258"
+    },
+    {
+      "name": "00005888_2bf953ef98e240b99331861a_trimesh_001.ply",
+      "vertices": 8240,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00005888_2bf953ef98e240b99331861a_trimesh_001.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00005888_2bf953ef98e240b99331861a_trimesh_001.ply",
+      "pointcloud_sha256": "d2c4b874e616b127949cef7ef5ad01229c25130efdc78feb2d23253c39a2a4f8",
+      "ground_truth_sha256": "df9c4e6d48bb5e8c1d73ed6c7ae597a673abc6480b30ac3312c81dfee87100f0"
+    },
+    {
+      "name": "00014371_4898b9df95db421ca3eeae4d_trimesh_000.ply",
+      "vertices": 8607,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00014371_4898b9df95db421ca3eeae4d_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00014371_4898b9df95db421ca3eeae4d_trimesh_000.ply",
+      "pointcloud_sha256": "669f7d7e7ccac1616f76cedeb7b866d4a4ea6d9df265971945c6953e9c5fb323",
+      "ground_truth_sha256": "91f2b27f8dcca3041227bb5c7a939e3a3b3758699744bf85cf3090d8525eea6a"
+    },
+    {
+      "name": "00028387_0d88a10139cf4468acc4c155_trimesh_000.ply",
+      "vertices": 9079,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00028387_0d88a10139cf4468acc4c155_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00028387_0d88a10139cf4468acc4c155_trimesh_000.ply",
+      "pointcloud_sha256": "4d4d4bbf741ba4fb0522bdb88338ee98e777a1d750c1fb51c807d0afc7b98c57",
+      "ground_truth_sha256": "e722f78987a6be658bc856a2c658b9d798500fd20cf84a74cacc49f2d147e9d3"
+    },
+    {
+      "name": "00043337_3a8d775e4dc0437cbf3b85dc_trimesh_010.ply",
+      "vertices": 9632,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00043337_3a8d775e4dc0437cbf3b85dc_trimesh_010.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00043337_3a8d775e4dc0437cbf3b85dc_trimesh_010.ply",
+      "pointcloud_sha256": "ad087f20d851564c73a4ad5f6122dc40e93b5c4fa158a363835444a8003b602c",
+      "ground_truth_sha256": "c7f1d703f2151f2c7fe9b13015915179e6e8523967b24597808ebb924d617840"
+    },
+    {
+      "name": "00031187_94d7a443e81447829c2721d7_trimesh_001.ply",
+      "vertices": 10130,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00031187_94d7a443e81447829c2721d7_trimesh_001.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00031187_94d7a443e81447829c2721d7_trimesh_001.ply",
+      "pointcloud_sha256": "6b8a9fbe375d20b98e2fed9a889713f5346493590e776e271231f2433f624eee",
+      "ground_truth_sha256": "03ab46d6ee05bf093cfef24bdce81767ed0430a1110420a518bd242aceb0725c"
+    },
+    {
+      "name": "00040258_a8cb0da2231a4af09f37a487_trimesh_000.ply",
+      "vertices": 10651,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00040258_a8cb0da2231a4af09f37a487_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00040258_a8cb0da2231a4af09f37a487_trimesh_000.ply",
+      "pointcloud_sha256": "0af0741fd141a191a943d020252fcf723c2e9ce8739ce8f32d45e68ddb32ef11",
+      "ground_truth_sha256": "703d5ad824678d8270002be06dfe46b5bbf4c456a30886254e45eadc896f9470"
+    },
+    {
+      "name": "00054968_8724be9efc0243b2941170a3_trimesh_002.ply",
+      "vertices": 11060,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00054968_8724be9efc0243b2941170a3_trimesh_002.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00054968_8724be9efc0243b2941170a3_trimesh_002.ply",
+      "pointcloud_sha256": "55cd5c2f2b93e4afdf99f997e361fa88526e3f4ad8c5522015b25e65e2049fb6",
+      "ground_truth_sha256": "d417e9f5142fc6e9200291efd1faf167f59cabe3b7212ce5d5771e8e5cb90fce"
+    },
+    {
+      "name": "00057151_017eee97a7f2411aa5c1cc82_trimesh_001.ply",
+      "vertices": 11501,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00057151_017eee97a7f2411aa5c1cc82_trimesh_001.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00057151_017eee97a7f2411aa5c1cc82_trimesh_001.ply",
+      "pointcloud_sha256": "207e3a11dd1b844bd92fc66c0dc52f88ce05cc08c9c0fb837a09b99a0b54fe68",
+      "ground_truth_sha256": "509512251837b7d0b6a55c2a713659bea60ccf8ef2d9562c41b39cec36d4d95c"
+    },
+    {
+      "name": "00002587_cc1cd1b241b3486281c6e9f1_trimesh_001.ply",
+      "vertices": 11887,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00002587_cc1cd1b241b3486281c6e9f1_trimesh_001.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00002587_cc1cd1b241b3486281c6e9f1_trimesh_001.ply",
+      "pointcloud_sha256": "013e473fba4bc7553af9689b5f040a8a8be3e0c16d0b4ed743cf8278ae21203e",
+      "ground_truth_sha256": "507e45397388ac405bad1579e5b6e4190fdaaeaeaeb46207b09d66b449919972"
+    },
+    {
+      "name": "00057193_e9e0403c32ec4c8e85736034_trimesh_025.ply",
+      "vertices": 12225,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00057193_e9e0403c32ec4c8e85736034_trimesh_025.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00057193_e9e0403c32ec4c8e85736034_trimesh_025.ply",
+      "pointcloud_sha256": "a98f09ffa43fd263323e8e4cf4d21eb34d7e4d7243bc0be8c3f342ccfd269b33",
+      "ground_truth_sha256": "b9c9f791dfe25c73d1eba796e6ba13ee0c7d16dfcd7b390c0461e5f1c549e7e9"
+    },
+    {
+      "name": "00024607_f0b0a2f166434b47bc3e3a62_trimesh_003.ply",
+      "vertices": 12644,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00024607_f0b0a2f166434b47bc3e3a62_trimesh_003.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00024607_f0b0a2f166434b47bc3e3a62_trimesh_003.ply",
+      "pointcloud_sha256": "e3c8ba80f334a79e820448b8f4b8fb9bbed84586b7af7449c78ad3dfe0aa4707",
+      "ground_truth_sha256": "25522f8d6f53dc73edfc34b1aa8b3151c19bbe6514b7846ecf5f7f92a27c7887"
+    },
+    {
+      "name": "00030088_794d237457da437eab055881_trimesh_006.ply",
+      "vertices": 12987,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00030088_794d237457da437eab055881_trimesh_006.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00030088_794d237457da437eab055881_trimesh_006.ply",
+      "pointcloud_sha256": "3be9c3e2e0cbb6c685c22b86f1f63f2c8e7f34048a456f89299b706bdc16ff44",
+      "ground_truth_sha256": "e1c7d073fe5dfe62d94f147b9c3ee85662f722854dfcb3e880ff4b51b0801662"
+    },
+    {
+      "name": "00015727_bca56983eee140db9aa4c9a1_trimesh_068.ply",
+      "vertices": 13298,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00015727_bca56983eee140db9aa4c9a1_trimesh_068.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00015727_bca56983eee140db9aa4c9a1_trimesh_068.ply",
+      "pointcloud_sha256": "0a9c95e36c99527305d7381013ece63f5ed28af30f2b0dfc636d8c3a59958472",
+      "ground_truth_sha256": "615618d657bebda3f0b349f0f4e7f309ee0857b8c1939396ba6d62921da92820"
+    },
+    {
+      "name": "00028499_dae19cca317243e3bbc215dd_trimesh_097.ply",
+      "vertices": 13662,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00028499_dae19cca317243e3bbc215dd_trimesh_097.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00028499_dae19cca317243e3bbc215dd_trimesh_097.ply",
+      "pointcloud_sha256": "4bc2726365d3a0efe428c1a66c608ef98e3b0deeaaa18351487f476fa466666a",
+      "ground_truth_sha256": "43c9d723f857273ada00dfdc3d2c7bb085c54325014e74c0b362cb720f78772c"
+    },
+    {
+      "name": "00007777_a18dcf0dd60f4b0f91f55385_trimesh_000.ply",
+      "vertices": 13924,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00007777_a18dcf0dd60f4b0f91f55385_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00007777_a18dcf0dd60f4b0f91f55385_trimesh_000.ply",
+      "pointcloud_sha256": "7edebd420a07e6a2d68c971dc2af214c40ee9f762898ffc77b8fffb52b94207e",
+      "ground_truth_sha256": "9bc21fbede9ccd95e64a0c468fb64cfcda1d08e357908d4a0591b062aed3ec9c"
+    },
+    {
+      "name": "00042377_609d989b73df48108687cda5_trimesh_031.ply",
+      "vertices": 14204,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00042377_609d989b73df48108687cda5_trimesh_031.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00042377_609d989b73df48108687cda5_trimesh_031.ply",
+      "pointcloud_sha256": "dfb9520ee1111f0a33137827c1cc315385ac95b4e44542bb3f4549e27cb20164",
+      "ground_truth_sha256": "1c6c7eac20098b3f56f763f0bd58d365d3d16f556fae0c4edc6c43272fcccde8"
+    },
+    {
+      "name": "00024468_f52d73d872894d93ba94a9d0_trimesh_000.ply",
+      "vertices": 14466,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00024468_f52d73d872894d93ba94a9d0_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00024468_f52d73d872894d93ba94a9d0_trimesh_000.ply",
+      "pointcloud_sha256": "0da9d130722ad3af4a4f4e715282b62be7223520465aefc2c792fbf4b642f954",
+      "ground_truth_sha256": "e1c8b167b136bf04133af01670aacc76e9212ffb54052f8ef25efe4eb06bbdbf"
+    },
+    {
+      "name": "00035495_74a037c05d3b4826887c058a_trimesh_001.ply",
+      "vertices": 14745,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00035495_74a037c05d3b4826887c058a_trimesh_001.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00035495_74a037c05d3b4826887c058a_trimesh_001.ply",
+      "pointcloud_sha256": "dc4d94914fac971d19f285c5c23e05d4da6da20ac8d6c09326555abea026b5c5",
+      "ground_truth_sha256": "5f3921c9cea93ff5f415e201f5ce204cbf06748070e875730b6ecaf5f1ac89e3"
+    },
+    {
+      "name": "00026594_95b4366d92834ce18d58e45c_trimesh_047.ply",
+      "vertices": 15104,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00026594_95b4366d92834ce18d58e45c_trimesh_047.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00026594_95b4366d92834ce18d58e45c_trimesh_047.ply",
+      "pointcloud_sha256": "97b093bc0a697ad7be96d959ae4333dcbe13d21066c533b1ec14a8e232f8e097",
+      "ground_truth_sha256": "fb46f3f02d604df7e41fb20100b98b5fd5af4b6ac0c7455387eb519cf004e861"
+    },
+    {
+      "name": "00048943_c4a20dbdfc51458baacf463e_trimesh_000.ply",
+      "vertices": 15380,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00048943_c4a20dbdfc51458baacf463e_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00048943_c4a20dbdfc51458baacf463e_trimesh_000.ply",
+      "pointcloud_sha256": "9982563e8f5aa666d38f12c2913819eb9c1c79de1e07765c0b6480b5dbacd775",
+      "ground_truth_sha256": "a4dbc662dcade926d8f015cec06fa1f78dabd33990d743fa4262e253d0f56cc2"
+    },
+    {
+      "name": "00028713_2f001acb8aef49388fe7678b_trimesh_004.ply",
+      "vertices": 15749,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00028713_2f001acb8aef49388fe7678b_trimesh_004.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00028713_2f001acb8aef49388fe7678b_trimesh_004.ply",
+      "pointcloud_sha256": "4c0ed174d70a609e9054c6c824eee196f7d9be89c3c608a7b1228fec96916de1",
+      "ground_truth_sha256": "5f04b72fed4bb784c93d5cb79adc87b8fa4c9536d4d9d868583d1b3684459abe"
+    },
+    {
+      "name": "00021080_1d8d55bf8ae64e74b9fa2eba_trimesh_000.ply",
+      "vertices": 16163,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00021080_1d8d55bf8ae64e74b9fa2eba_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00021080_1d8d55bf8ae64e74b9fa2eba_trimesh_000.ply",
+      "pointcloud_sha256": "73f630e4b9bb75c3965da7cd653b32eb74bcd0293074a50bacabc067adaeaa23",
+      "ground_truth_sha256": "5bc8413e003c42d93184cab343fc5c58269f55b7d521a8cadc3624a9f9951d3a"
+    },
+    {
+      "name": "00006645_c82bee0c122742d9b2741aef_trimesh_004.ply",
+      "vertices": 16509,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00006645_c82bee0c122742d9b2741aef_trimesh_004.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00006645_c82bee0c122742d9b2741aef_trimesh_004.ply",
+      "pointcloud_sha256": "9d6aaf172ee501cc27f243e3c6917589665d4fa92e59124f5f61ff6e899a2bb6",
+      "ground_truth_sha256": "d9e3fe64060e0324e491db54c71fcba26ec4e84fa1a4dfaddefbd287e3e10bb1"
+    },
+    {
+      "name": "00053012_11c1054cb78746d29012c920_trimesh_003.ply",
+      "vertices": 16908,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00053012_11c1054cb78746d29012c920_trimesh_003.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00053012_11c1054cb78746d29012c920_trimesh_003.ply",
+      "pointcloud_sha256": "e3a7ca9011ab002203690aa4d71919fae1bc9b8a335081b201608d89f331ef23",
+      "ground_truth_sha256": "1281c0dd10d09dadf628efb56e6f9b1d4f6a717aed3d832b66f478a63862853d"
+    },
+    {
+      "name": "00042036_2324de94313d4a5988f28fab_trimesh_015.ply",
+      "vertices": 17280,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00042036_2324de94313d4a5988f28fab_trimesh_015.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00042036_2324de94313d4a5988f28fab_trimesh_015.ply",
+      "pointcloud_sha256": "0c4db5f9c48c0cf2f8e0fb3c356687642d5ec947ec6e4580651b9cfdca383c65",
+      "ground_truth_sha256": "9779b74aa85d256467cc8a08d6d1784546539ca7ffa13dbc558a16377b640727"
+    },
+    {
+      "name": "00043427_01f3c3df83f84d37ad3012f7_trimesh_000.ply",
+      "vertices": 17623,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00043427_01f3c3df83f84d37ad3012f7_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00043427_01f3c3df83f84d37ad3012f7_trimesh_000.ply",
+      "pointcloud_sha256": "2eeda6f066df933ef2a9e665996f86c70369596a7b0a0d40998683b883b1eb0a",
+      "ground_truth_sha256": "a7c3ab06b2dd134d01a319ef75bf3ee5eced5b709a282d3ec33a4bdc5fa7992d"
+    },
+    {
+      "name": "00018767_043d7c8b4cfe43969c461aaa_trimesh_004.ply",
+      "vertices": 18045,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00018767_043d7c8b4cfe43969c461aaa_trimesh_004.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00018767_043d7c8b4cfe43969c461aaa_trimesh_004.ply",
+      "pointcloud_sha256": "1318937d4ee93a0a39f1587bff180cfeb5d9f2a15d7e5e61b6ae87024fb2cdfb",
+      "ground_truth_sha256": "05c7d459e9f0cc5f8224096dd7c82ae3abcd6fdda6ddde54ec8c182b5f340b72"
+    },
+    {
+      "name": "00021867_0c7f74973c8b453dadde1790_trimesh_000.ply",
+      "vertices": 18396,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00021867_0c7f74973c8b453dadde1790_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00021867_0c7f74973c8b453dadde1790_trimesh_000.ply",
+      "pointcloud_sha256": "2922d91dde1cd640c63e6243a8b8a6ef3cb50c32d0ff79e2093d8d02182d2d4a",
+      "ground_truth_sha256": "75a5f1428a9625853f6e78e37f158a66a147928c990856583368e59ff0b4dcfb"
+    },
+    {
+      "name": "00029714_d8f44c21c409440295803763_trimesh_000.ply",
+      "vertices": 18764,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00029714_d8f44c21c409440295803763_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00029714_d8f44c21c409440295803763_trimesh_000.ply",
+      "pointcloud_sha256": "cb76833fd676c394da6adbc1bca191a52853b99448b811b5cfae1c6a0835cd7a",
+      "ground_truth_sha256": "d1040cdf79762af5d16a1e10fcdb65a1aa2fdb7b5640e23594cf893ce4ad7d86"
+    },
+    {
+      "name": "00019800_b8a599e52e5448a6874c95f7_trimesh_000.ply",
+      "vertices": 19669,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00019800_b8a599e52e5448a6874c95f7_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00019800_b8a599e52e5448a6874c95f7_trimesh_000.ply",
+      "pointcloud_sha256": "72069be9683750696219f931bbd6787304217559051b8e1e5e6af63c75df8ab9",
+      "ground_truth_sha256": "0071753a3198a4f6fcddab97a02f7a9c95d555d0040f089dadfa99010ed377fc"
+    }
+  ],
+  "benchmark_matches_original_cli_exactly": true,
+  "gpu_after": "NVIDIA GeForce RTX 5090, 32607 MiB, 8543 MiB, 0 %"
+}

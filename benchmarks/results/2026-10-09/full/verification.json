@@ -1,0 +1,15 @@
+{
+  "research_projects_audited": 11,
+  "real_test_shapes": 40,
+  "raw_measurements": 2400,
+  "full_pipeline_runs": 400,
+  "real_logit_extraction_runs": 2000,
+  "identical_output_ply_pairs": 40,
+  "accuracy_rows": 80,
+  "summary_recomputed_from_raw_data": true,
+  "original_baseline_snapshot_preserved": true,
+  "original_cli_helper_match": true,
+  "modified_python_syntax_valid": true,
+  "regression_tests_passed": 6,
+  "report_and_tables_present": true
+}

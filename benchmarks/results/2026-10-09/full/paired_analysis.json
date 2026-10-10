@@ -1,0 +1,18 @@
+{
+  "reconstruction": {
+    "paired_sample_bootstrap_95pct_time_reduction": [
+      2.1820552760335654,
+      2.82512424284518
+    ],
+    "samples_faster": 38,
+    "samples": 40
+  },
+  "extraction": {
+    "paired_sample_bootstrap_95pct_time_reduction": [
+      63.2422761155599,
+      64.41036404318504
+    ],
+    "samples_faster": 40,
+    "samples": 40
+  }
+}

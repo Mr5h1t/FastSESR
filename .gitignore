@@ -1,0 +1,14 @@
+# Local datasets, reconstructions and runtime caches
+/Data/
+/results/
+__pycache__/
+*.py[cod]
+*.pth
+*.pt
+
+# Generated mesh artifacts; retain the experiment tables, manifests and figures
+/benchmarks/results/**/*.ply
+/benchmarks/results/**/original_cli_bootstrap/
+/benchmarks/results/**/cli_selected_smoke/
+/benchmarks/results/**/pilot/
+/benchmarks/results/**/source_before/
