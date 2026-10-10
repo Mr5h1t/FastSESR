@@ -1,0 +1,129 @@
+{
+  "checks": {
+    "sources_match": true,
+    "weights_match": true,
+    "row_counts": {
+      "development_raw.csv": 144,
+      "test_raw.csv": 360,
+      "test_per_shape.csv": 120,
+      "timing_raw.csv": 360,
+      "repair_per_shape.csv": 56
+    },
+    "raw_and_summary_agree": true,
+    "all_40_vertex_arrays_unchanged_and_topology_guards_hold": true,
+    "real_cli_matches_experiment_byte_for_byte": true,
+    "heldout_count": 38,
+    "heldout_samples": [
+      "00001006_6962bc8aad2c4e27b046d5b4_trimesh_008.ply",
+      "00045193_b69af8efe1044bc0a939de36_trimesh_002.ply",
+      "00006822_c1534e8543a94f33aeeae03e_trimesh_002.ply",
+      "00039797_adcb2fa3666b48bd8933f10c_trimesh_009.ply",
+      "00005277_a8ded82a1fd74021ac459ffb_trimesh_013.ply",
+      "00052990_e1f3fdac7cdf42b0b876329c_trimesh_004.ply",
+      "00021144_549f0c29542541baa6fdf3c9_trimesh_000.ply",
+      "00054842_dee0bf07f7d64ced8e7389be_trimesh_000.ply",
+      "00048922_5b10296f721a4f8c81b3a0ac_trimesh_003.ply",
+      "00036742_0f3d29b03c15430f85ba40c9_trimesh_000.ply",
+      "00003702_6ebd53ae9f35478bb908be54_trimesh_001.ply",
+      "00023706_782c55a38ce7421faaeb2898_trimesh_003.ply",
+      "00032032_9f5bcf378f0e4944bb6907c2_trimesh_000.ply",
+      "00041500_75151c13b7ea4add97fd4381_trimesh_001.ply",
+      "00054282_3ae9de8518614213919d8477_trimesh_001.ply",
+      "00054802_a404d23dc8534c99bcaf7dc3_trimesh_008.ply",
+      "00036372_98472b6a279349a2b942dedf_trimesh_000.ply",
+      "00041996_2686654542df4ae39efd05b4_trimesh_003.ply",
+      "00021126_de3e556f2881489d9d102d69_trimesh_000.ply",
+      "00054127_4f3398b65b35455f87824aa4_trimesh_000.ply",
+      "00051397_dc398ce8e5354043a1e8d208_trimesh_003.ply",
+      "00028399_278929da359a45eca29d7de2_trimesh_000.ply",
+      "00033036_767efcae9b9649fe961ebaab_trimesh_002.ply",
+      "00000274_648a7c23a21f4e88bf25ffeb_trimesh_002.ply",
+      "00018694_5730a99bb83a42d19bd5d69c_trimesh_000.ply",
+      "00017930_752778aeefb145dfb73e1e5c_trimesh_000.ply",
+      "00026479_caa4977e55f24092ae104c1c_trimesh_000.ply",
+      "00000699_cae88f0aaaf34de597863810_trimesh_000.ply",
+      "00039882_a246390e46ec4d75b04a081b_trimesh_006.ply",
+      "00006278_1057ca83f2264404aa6cd16d_trimesh_000.ply",
+      "00021041_51b9c363a70142c1b4e6f1a3_trimesh_000.ply",
+      "00053988_c2b1b74c7fbd42248d454566_trimesh_001.ply",
+      "00033355_2e0f13ba549f4aff80269717_trimesh_000.ply",
+      "00011966_8ee3fba81d5a4d61a14c44c2_trimesh_000.ply",
+      "00040358_7fc6975da5374aa08376db88_trimesh_003.ply",
+      "00016374_5d383e5ea4d14a0bbf363339_trimesh_001.ply",
+      "00042723_7b73668bafbe495183f98bb8_trimesh_000.ply",
+      "00007066_d654438ec58a44d6a567dd51_trimesh_003.ply"
+    ],
+    "excluded_byte_duplicates": [
+      {
+        "sample": "00042668_a29ed51c78f5429e92496951_trimesh_041.ply",
+        "duplicates": [
+          "00040500_02f164a8b28a4d3581d3d3e9_trimesh_000.ply",
+          "00053139_1945e4f3b59145d890905b9d_trimesh_009.ply"
+        ]
+      },
+      {
+        "sample": "00025485_765982d1aaef40448478d576_trimesh_002.ply",
+        "duplicates": [
+          "00048314_cd4cb42c8efe4021b765741b_trimesh_002.ply"
+        ]
+      }
+    ],
+    "deduplication_note": "Post-run byte-hash audit; no metric-dependent exclusion. Original 40-case records are retained."
+  },
+  "heldout_summary": {
+    "baseline": {
+      "CD1_x100": 0.2805699842762792,
+      "CD2_x1e5": 0.5322752300898362,
+      "Precision": 0.9523991228070173,
+      "Recall": 0.9515891228070176,
+      "F1_at_0_003": 0.951990100882259,
+      "NC": 0.9854879590288735,
+      "triangles": 22817.342105263157,
+      "boundary_edges": 55.36842105263158,
+      "boundary_edge_fraction": 0.0023789147109114003,
+      "nonmanifold_edges": 68.89473684210526,
+      "nonmanifold_edge_fraction": 0.00220335433894636,
+      "degenerate_faces": 0.0,
+      "SurfaceCD1_x100": 0.00046438663696135585,
+      "SurfaceCD2_x1e5": 0.0012829004803495906,
+      "seconds": 0.36693760385050583,
+      "extra_peak_mib": 2985.3073216488488
+    },
+    "strict_0.6": {
+      "CD1_x100": 0.28054579455350803,
+      "CD2_x1e5": 0.5323013117479511,
+      "Precision": 0.9522988596491228,
+      "Recall": 0.9515228947368422,
+      "F1_at_0_003": 0.9519067147949003,
+      "NC": 0.9854351757331623,
+      "triangles": 22799.63157894737,
+      "boundary_edges": 57.526315789473685,
+      "boundary_edge_fraction": 0.0024096207206985233,
+      "nonmanifold_edges": 42.78947368421053,
+      "nonmanifold_edge_fraction": 0.0013482530082991127,
+      "degenerate_faces": 0.0,
+      "SurfaceCD1_x100": 0.0004923807273875185,
+      "SurfaceCD2_x1e5": 0.0013595059614594724,
+      "seconds": 0.36694670375436544,
+      "extra_peak_mib": 2985.3070518092104
+    },
+    "planar_repaired": {
+      "CD1_x100": 0.2805617890833516,
+      "CD2_x1e5": 0.5322890766545638,
+      "Precision": 0.9522835087719297,
+      "Recall": 0.9515211403508769,
+      "F1_at_0_003": 0.9518981721804533,
+      "NC": 0.9855249331069146,
+      "triangles": 22799.947368421053,
+      "boundary_edges": 46.94736842105263,
+      "boundary_edge_fraction": 0.0021434670888358957,
+      "nonmanifold_edges": 34.421052631578945,
+      "nonmanifold_edge_fraction": 0.0012186223115336413,
+      "degenerate_faces": 0.0,
+      "SurfaceCD1_x100": 0.0004686884249699138,
+      "SurfaceCD2_x1e5": 0.0013000294808312837,
+      "seconds": 1.0068343026612543,
+      "extra_peak_mib": 2985.3073216488488
+    }
+  }
+}

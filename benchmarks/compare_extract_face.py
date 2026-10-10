@@ -61,7 +61,14 @@ def load_original_models(args, out, samples):
     warm_list.write_text(samples[0]['name'] + '\n')
     previous_argv = sys.argv
     current_extractor = extract_module.SurfExtract
-    extract_module.SurfExtract = before.SurfExtract
+    class OriginalCLIExtractor(before.SurfExtract):
+        def __init__(self, confidence_top1=0.8, confidence_top2=0.5, angle=120,
+                     quality_weight=0.0, quality_target=0.2):
+            if quality_weight != 0:
+                raise ValueError("The original baseline does not support adaptive quality.")
+            super().__init__(confidence_top1, confidence_top2, angle)
+
+    extract_module.SurfExtract = OriginalCLIExtractor
     sys.argv = [str(ROOT / 'S2_reconstruct.py'), '--use_loon_unet',
                 '--loon_unet_ckpt', str(ROOT / 'runs/S2_train/model_best.pth'),
                 '--dataset', 'ABC_test', '--data_root', str(ROOT / 'Data'),

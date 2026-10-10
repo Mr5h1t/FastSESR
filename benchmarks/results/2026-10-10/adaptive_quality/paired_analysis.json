@@ -1,0 +1,286 @@
+{
+  "strict_0.6": {
+    "CD1_x100": {
+      "mean_difference": 1.1471023545623488e-05,
+      "percentile_95_interval": [
+        -6.59996981120078e-05,
+        8.878454380003862e-05
+      ],
+      "lower": 19,
+      "higher": 20,
+      "equal": 1
+    },
+    "CD2_x1e5": {
+      "mean_difference": 9.970421501522656e-05,
+      "percentile_95_interval": [
+        -0.00020633160112174567,
+        0.00040744178326229284
+      ],
+      "lower": 18,
+      "higher": 21,
+      "equal": 1
+    },
+    "Precision": {
+      "mean_difference": 4.591666666665939e-05,
+      "percentile_95_interval": [
+        -7.26666666666794e-05,
+        0.00017499999999999469
+      ],
+      "lower": 15,
+      "higher": 21,
+      "equal": 4
+    },
+    "Recall": {
+      "mean_difference": -7.483333333334063e-05,
+      "percentile_95_interval": [
+        -0.00026283333333333177,
+        0.00010508749999999194
+      ],
+      "lower": 21,
+      "higher": 16,
+      "equal": 3
+    },
+    "F1_at_0_003": {
+      "mean_difference": -1.4462586662891685e-05,
+      "percentile_95_interval": [
+        -0.00013231435028593746,
+        0.00010852112753773935
+      ],
+      "lower": 18,
+      "higher": 19,
+      "equal": 3
+    },
+    "NC": {
+      "mean_difference": 3.4629801091784485e-06,
+      "percentile_95_interval": [
+        -5.9942063314266864e-05,
+        6.532636424937183e-05
+      ],
+      "lower": 22,
+      "higher": 17,
+      "equal": 1
+    },
+    "triangles": {
+      "mean_difference": -26.85,
+      "percentile_95_interval": [
+        -43.35,
+        -13.7
+      ],
+      "lower": 39,
+      "higher": 0,
+      "equal": 1
+    },
+    "boundary_edges": {
+      "mean_difference": 6.375,
+      "percentile_95_interval": [
+        0.475,
+        14.65
+      ],
+      "lower": 15,
+      "higher": 22,
+      "equal": 3
+    },
+    "boundary_edge_fraction": {
+      "mean_difference": 0.00020215370022419877,
+      "percentile_95_interval": [
+        1.0362055340857893e-05,
+        0.00046775932089895237
+      ],
+      "lower": 15,
+      "higher": 24,
+      "equal": 1
+    },
+    "nonmanifold_edges": {
+      "mean_difference": -43.125,
+      "percentile_95_interval": [
+        -68.675625,
+        -22.825
+      ],
+      "lower": 39,
+      "higher": 0,
+      "equal": 1
+    },
+    "nonmanifold_edge_fraction": {
+      "mean_difference": -0.001372325161292196,
+      "percentile_95_interval": [
+        -0.0020749235644055342,
+        -0.0007858778503465596
+      ],
+      "lower": 39,
+      "higher": 0,
+      "equal": 1
+    },
+    "degenerate_faces": {
+      "mean_difference": 0.0,
+      "percentile_95_interval": [
+        0.0,
+        0.0
+      ],
+      "lower": 0,
+      "higher": 0,
+      "equal": 40
+    },
+    "SurfaceCD1_x100": {
+      "mean_difference": 2.470151184985614e-06,
+      "percentile_95_interval": [
+        -1.7968479321776865e-05,
+        2.0606618919012665e-05
+      ],
+      "lower": 16,
+      "higher": 23,
+      "equal": 1
+    },
+    "SurfaceCD2_x1e5": {
+      "mean_difference": -1.7441356102798997e-05,
+      "percentile_95_interval": [
+        -8.937698539454464e-05,
+        3.726267332625527e-05
+      ],
+      "lower": 17,
+      "higher": 21,
+      "equal": 2
+    }
+  },
+  "adaptive_selected": {
+    "CD1_x100": {
+      "mean_difference": 0.0,
+      "percentile_95_interval": [
+        0.0,
+        0.0
+      ],
+      "lower": 0,
+      "higher": 0,
+      "equal": 40
+    },
+    "CD2_x1e5": {
+      "mean_difference": 0.0,
+      "percentile_95_interval": [
+        0.0,
+        0.0
+      ],
+      "lower": 0,
+      "higher": 0,
+      "equal": 40
+    },
+    "Precision": {
+      "mean_difference": 0.0,
+      "percentile_95_interval": [
+        0.0,
+        0.0
+      ],
+      "lower": 0,
+      "higher": 0,
+      "equal": 40
+    },
+    "Recall": {
+      "mean_difference": 0.0,
+      "percentile_95_interval": [
+        0.0,
+        0.0
+      ],
+      "lower": 0,
+      "higher": 0,
+      "equal": 40
+    },
+    "F1_at_0_003": {
+      "mean_difference": 0.0,
+      "percentile_95_interval": [
+        0.0,
+        0.0
+      ],
+      "lower": 0,
+      "higher": 0,
+      "equal": 40
+    },
+    "NC": {
+      "mean_difference": 0.0,
+      "percentile_95_interval": [
+        0.0,
+        0.0
+      ],
+      "lower": 0,
+      "higher": 0,
+      "equal": 40
+    },
+    "triangles": {
+      "mean_difference": 0.0,
+      "percentile_95_interval": [
+        0.0,
+        0.0
+      ],
+      "lower": 0,
+      "higher": 0,
+      "equal": 40
+    },
+    "boundary_edges": {
+      "mean_difference": 0.0,
+      "percentile_95_interval": [
+        0.0,
+        0.0
+      ],
+      "lower": 0,
+      "higher": 0,
+      "equal": 40
+    },
+    "boundary_edge_fraction": {
+      "mean_difference": 0.0,
+      "percentile_95_interval": [
+        0.0,
+        0.0
+      ],
+      "lower": 0,
+      "higher": 0,
+      "equal": 40
+    },
+    "nonmanifold_edges": {
+      "mean_difference": 0.0,
+      "percentile_95_interval": [
+        0.0,
+        0.0
+      ],
+      "lower": 0,
+      "higher": 0,
+      "equal": 40
+    },
+    "nonmanifold_edge_fraction": {
+      "mean_difference": 0.0,
+      "percentile_95_interval": [
+        0.0,
+        0.0
+      ],
+      "lower": 0,
+      "higher": 0,
+      "equal": 40
+    },
+    "degenerate_faces": {
+      "mean_difference": 0.0,
+      "percentile_95_interval": [
+        0.0,
+        0.0
+      ],
+      "lower": 0,
+      "higher": 0,
+      "equal": 40
+    },
+    "SurfaceCD1_x100": {
+      "mean_difference": 0.0,
+      "percentile_95_interval": [
+        0.0,
+        0.0
+      ],
+      "lower": 0,
+      "higher": 0,
+      "equal": 40
+    },
+    "SurfaceCD2_x1e5": {
+      "mean_difference": 0.0,
+      "percentile_95_interval": [
+        0.0,
+        0.0
+      ],
+      "lower": 0,
+      "higher": 0,
+      "equal": 40
+    }
+  }
+}

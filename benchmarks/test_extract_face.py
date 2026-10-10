@@ -98,6 +98,43 @@ class ExtractionEquivalence(unittest.TestCase):
                 SurfExtract(**kwargs)
 
 
+    def test_regular_geometry_can_rescue_lower_confidence_pair(self):
+        points = torch.tensor([[0., 0., 0.], [1., 0., 0.],
+                               [.5, .8, 0.], [.5, -.8, 0.]])
+        indices = torch.tensor([[0, 1, 2, 3]])
+        scores = torch.full((1, 3, 3), -20.)
+        scores[0, 0, 1] = torch.logit(torch.tensor(.95))
+        scores[0, 0, 2] = torch.logit(torch.tensor(.45))
+        self.assertEqual(len(SurfExtract()(points, scores, indices)), 0)
+        adaptive = SurfExtract(quality_weight=.2, quality_target=.2)
+        self.assertEqual(len(adaptive(points, scores, indices)), 2)
+
+    def test_slender_geometry_needs_higher_confidence(self):
+        points = torch.tensor([[0., 0., 0.], [1., 0., 0.],
+                               [.5, .001, 0.], [.5, -.001, 0.]])
+        indices = torch.tensor([[0, 1, 2, 3]])
+        scores = torch.full((1, 3, 3), -20.)
+        scores[0, 0, 1] = torch.logit(torch.tensor(.95))
+        scores[0, 0, 2] = torch.logit(torch.tensor(.52))
+        self.assertEqual(len(SurfExtract()(points, scores, indices)), 2)
+        adaptive = SurfExtract(quality_weight=.2, quality_target=.2)
+        self.assertEqual(len(adaptive(points, scores, indices)), 0)
+
+    def test_adaptive_quality_is_scale_and_translation_invariant(self):
+        p, scores, idx = self.make_case(8)
+        adaptive = SurfExtract(quality_weight=.2, quality_target=.2)
+        expected = adaptive(p, scores, idx)
+        actual = adaptive(p*3+2, scores, idx)
+        self.assertTrue(torch.equal(expected, actual))
+
+    def test_invalid_adaptive_parameters_rejected(self):
+        for kwargs in ({'quality_weight': -0.1}, {'quality_weight': 1.1},
+                       {'quality_weight': float('nan')}, {'quality_target': -.1},
+                       {'quality_target': 1.1}, {'quality_target': float('nan')}):
+            with self.subTest(kwargs=kwargs), self.assertRaises(ValueError):
+                SurfExtract(**kwargs)
+
+
 
 if __name__ == '__main__':
     unittest.main()

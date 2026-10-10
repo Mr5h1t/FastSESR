@@ -1,0 +1,42 @@
+{
+  "prototype_sha256": "ad13e4bcfec7def3114f3e2d9fd4cffbcc4e707959c5eea0f332634c239f1063",
+  "final_sha256": "f10f21a11cf60f49d6c46901d3f9ade3ccc87ad524d057866cf8213c8dd01330",
+  "verified_real_shapes": 7,
+  "records": [
+    {
+      "sample": "00001006_6962bc8aad2c4e27b046d5b4_trimesh_008.ply",
+      "exact_faces_equal": true,
+      "exact_diagnostics_equal": true
+    },
+    {
+      "sample": "00042668_a29ed51c78f5429e92496951_trimesh_041.ply",
+      "exact_faces_equal": true,
+      "exact_diagnostics_equal": true
+    },
+    {
+      "sample": "00045193_b69af8efe1044bc0a939de36_trimesh_002.ply",
+      "exact_faces_equal": true,
+      "exact_diagnostics_equal": true
+    },
+    {
+      "sample": "00006822_c1534e8543a94f33aeeae03e_trimesh_002.ply",
+      "exact_faces_equal": true,
+      "exact_diagnostics_equal": true
+    },
+    {
+      "sample": "00039797_adcb2fa3666b48bd8933f10c_trimesh_009.ply",
+      "exact_faces_equal": true,
+      "exact_diagnostics_equal": true
+    },
+    {
+      "sample": "00005277_a8ded82a1fd74021ac459ffb_trimesh_013.ply",
+      "exact_faces_equal": true,
+      "exact_diagnostics_equal": true
+    },
+    {
+      "sample": "00052990_e1f3fdac7cdf42b0b876329c_trimesh_004.ply",
+      "exact_faces_equal": true,
+      "exact_diagnostics_equal": true
+    }
+  ]
+}

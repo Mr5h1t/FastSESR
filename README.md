@@ -230,6 +230,33 @@ The F1 change was very small; this is an optional experimental setting, and the
 defaults remain unchanged. See the [experiment report](benchmarks/results/2026-10-10/thresholds/REPORT.md)
 and [comparison table](benchmarks/results/2026-10-10/thresholds/comparison.csv).
 
+### Optional planar overlap repair
+
+Install the optional geometry dependency and add these flags to reconstruction:
+
+```bash
+pip install -r requirements-geometry.txt
+# Append to your S2_reconstruct.py command:
+--repair_planar_overlaps --planar_tolerance 1e-6
+```
+
+This postprocessing retriangulates overlapping planar regions using existing
+vertices. It checks projected coverage and seams, and rejects results that
+increase indexed boundary or non-manifold edge counts. It is disabled by default;
+per-shape diagnostics are written to `planar_repair_stats.json`.
+
+After excluding two byte-identical duplicates from 40 tested files, the 38-file
+comparison reduced mean non-manifold edges from 68.895 to 34.421 (50.04%) and
+boundary edges from 55.368 to 46.947 (15.21%). Sampled CD was effectively unchanged;
+continuous-surface CD1 increased by 0.93%. Mean reconstruction time increased from
+0.367 to 1.007 seconds. This is an optional topology tradeoff, with no demonstrated
+accuracy gain. See the [report](benchmarks/results/2026-10-10/planar_repair/REPORT.md)
+and [deduplicated results](benchmarks/results/2026-10-10/planar_repair/heldout_comparison.csv).
+
+A separate geometry-adaptive threshold trial (`--face_quality_weight` and
+`--face_quality_target`) did not pass the development constraints. Its weight
+remains zero by default. See the [negative result](benchmarks/results/2026-10-10/adaptive_quality/REPORT.md).
+
 ### Evaluate Reconstruction Quality
 
   - shape evaluation (sample 100K points): 

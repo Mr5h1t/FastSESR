@@ -1,0 +1,62 @@
+INITIALIZE original pretrained models
+/home/syx/data/miniconda3/envs/dcx/lib/python3.11/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Reconstruct ABC_test:   0%|          | 0/1 [00:00<?, ?file/s]Reconstruct ABC_test:   0%|          | 0/1 [00:00<?, ?file/s, time=0.45s, method=LOON-UNet]Reconstruct ABC_test: 100%|██████████| 1/1 [00:00<00:00,  2.18file/s, time=0.45s, method=LOON-UNet]Reconstruct ABC_test: 100%|██████████| 1/1 [00:00<00:00,  2.18file/s, time=0.45s, method=LOON-UNet]
+DEVELOPMENT 1/16 repaired_patches=0
+DEVELOPMENT 2/16 repaired_patches=2
+DEVELOPMENT 3/16 repaired_patches=2
+DEVELOPMENT 4/16 repaired_patches=2
+DEVELOPMENT 5/16 repaired_patches=5
+DEVELOPMENT 6/16 repaired_patches=7
+DEVELOPMENT 7/16 repaired_patches=6
+DEVELOPMENT 8/16 repaired_patches=3
+DEVELOPMENT 9/16 repaired_patches=2
+DEVELOPMENT 10/16 repaired_patches=4
+DEVELOPMENT 11/16 repaired_patches=6
+DEVELOPMENT 12/16 repaired_patches=3
+DEVELOPMENT 13/16 repaired_patches=7
+DEVELOPMENT 14/16 repaired_patches=9
+DEVELOPMENT 15/16 repaired_patches=10
+DEVELOPMENT 16/16 repaired_patches=6
+FIXED PARAMETERS; development comparison {"baseline": {"CD1_x100": 0.28269555173128275, "CD2_x1e5": 0.5371520141493114, "Precision": 0.952156875, "Recall": 0.9521345833333332, "F1_at_0_003": 0.9521453435599087, "NC": 0.9896557997819464, "triangles": 23339.8125, "boundary_edges": 16.875, "boundary_edge_fraction": 0.0005020972939796941, "nonmanifold_edges": 66.5, "nonmanifold_edge_fraction": 0.0019960209794081083, "degenerate_faces": 0.0, "SurfaceCD1_x100": 5.126484951128996e-06, "SurfaceCD2_x1e5": 1.530514138940228e-06}, "strict_0.6": {"CD1_x100": 0.28255010843811756, "CD2_x1e5": 0.5366232021807121, "Precision": 0.9522354166666668, "Recall": 0.9523195833333334, "F1_at_0_003": 0.9522772041630024, "NC": 0.9897638178230223, "triangles": 23323.5625, "boundary_edges": 19.1875, "boundary_edge_fraction": 0.0005519698210426188, "nonmanifold_edges": 38.0625, "nonmanifold_edge_fraction": 0.0011949454505529396, "degenerate_faces": 0.0, "SurfaceCD1_x100": 9.033086915966049e-06, "SurfaceCD2_x1e5": 5.5840636083023405e-06}, "planar_repaired": {"CD1_x100": 0.28275564176259205, "CD2_x1e5": 0.5374360511851205, "Precision": 0.9519577083333332, "Recall": 0.952095, "F1_at_0_003": 0.9520259332872568, "NC": 0.9897102544972012, "triangles": 23321.0, "boundary_edges": 7.9375, "boundary_edge_fraction": 0.00024084550548186733, "nonmanifold_edges": 29.0625, "nonmanifold_edge_fraction": 0.0009118408942906985, "degenerate_faces": 0.0, "SurfaceCD1_x100": 5.426226690197211e-06, "SurfaceCD2_x1e5": 1.7464733550296762e-06}}
+TEST 1/40 repaired_patches=0
+TEST 2/40 repaired_patches=0
+TEST 3/40 repaired_patches=2
+TEST 4/40 repaired_patches=0
+TEST 5/40 repaired_patches=5
+TEST 6/40 repaired_patches=2
+TEST 7/40 repaired_patches=5
+TEST 8/40 repaired_patches=2
+TEST 9/40 repaired_patches=3
+TEST 10/40 repaired_patches=2
+TEST 11/40 repaired_patches=2
+TEST 12/40 repaired_patches=3
+TEST 13/40 repaired_patches=17
+TEST 14/40 repaired_patches=8
+TEST 15/40 repaired_patches=4
+TEST 16/40 repaired_patches=7
+TEST 17/40 repaired_patches=3
+TEST 18/40 repaired_patches=2
+TEST 19/40 repaired_patches=2
+TEST 20/40 repaired_patches=2
+TEST 21/40 repaired_patches=2
+TEST 22/40 repaired_patches=2
+TEST 23/40 repaired_patches=8
+TEST 24/40 repaired_patches=4
+TEST 25/40 repaired_patches=10
+TEST 26/40 repaired_patches=6
+TEST 27/40 repaired_patches=10
+TEST 28/40 repaired_patches=2
+TEST 29/40 repaired_patches=5
+TEST 30/40 repaired_patches=4
+TEST 31/40 repaired_patches=6
+TEST 32/40 repaired_patches=2
+TEST 33/40 repaired_patches=2
+TEST 34/40 repaired_patches=3
+TEST 35/40 repaired_patches=17
+TEST 36/40 repaired_patches=3
+TEST 37/40 repaired_patches=8
+TEST 38/40 repaired_patches=5
+TEST 39/40 repaired_patches=5
+TEST 40/40 repaired_patches=8
+SUMMARY {"baseline": {"CD1_x100": 0.27743527734410434, "CD2_x1e5": 0.5236815057579, "Precision": 0.9533775833333333, "Recall": 0.9525975833333333, "F1_at_0_003": 0.9529837555478526, "NC": 0.9860062705598522, "triangles": 22458.1, "boundary_edges": 54.025, "boundary_edge_fraction": 0.002301785448373875, "nonmanifold_edges": 69.95, "nonmanifold_edge_fraction": 0.0022570741622152503, "degenerate_faces": 0.0, "SurfaceCD1_x100": 0.00044422608600408475, "SurfaceCD2_x1e5": 0.0012209217268305975, "seconds": 0.3611461653606966, "extra_peak_mib": 2986.257214355469}, "strict_0.6": {"CD1_x100": 0.2774146161652468, "CD2_x1e5": 0.5237082499966007, "Precision": 0.9532855833333332, "Recall": 0.9525399999999999, "F1_at_0_003": 0.9529088307936586, "NC": 0.9859520834458081, "triangles": 22440.65, "boundary_edges": 56.025, "boundary_edge_fraction": 0.0023330220829131778, "nonmanifold_edges": 44.175, "nonmanifold_edge_fraction": 0.001414077311130155, "degenerate_faces": 0.0, "SurfaceCD1_x100": 0.00047228847707525556, "SurfaceCD2_x1e5": 0.0012997622492085413, "seconds": 0.36113490497227757, "extra_peak_mib": 2986.256945800781}, "planar_repaired": {"CD1_x100": 0.2774238809055401, "CD2_x1e5": 0.5236715465415909, "Precision": 0.9532824999999999, "Recall": 0.9525378333333332, "F1_at_0_003": 0.9529062166566309, "NC": 0.9860436671383541, "triangles": 22440.875, "boundary_edges": 45.6, "boundary_edge_fraction": 0.0020676128828314975, "nonmanifold_edges": 35.825, "nonmanifold_edge_fraction": 0.0012876118980557588, "degenerate_faces": 0.0, "SurfaceCD1_x100": 0.0004482639103564612, "SurfaceCD2_x1e5": 0.0012371368494757, "seconds": 0.9865745798451826, "extra_peak_mib": 2986.257214355469}}

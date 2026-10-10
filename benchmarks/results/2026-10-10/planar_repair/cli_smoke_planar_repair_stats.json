@@ -1,0 +1,15 @@
+[
+  {
+    "sample": "00023706_782c55a38ce7421faaeb2898_trimesh_003.ply",
+    "candidate_patches": 58,
+    "repaired_patches": 17,
+    "skipped_nonplanar": 0,
+    "skipped_coverage": 38,
+    "skipped_seams": 3,
+    "skipped_qhull": 0,
+    "global_reverted": 0,
+    "removed_overlap_area": 0.0021703944594481405,
+    "input_faces": 16784,
+    "output_faces": 16767
+  }
+]

@@ -1,0 +1,286 @@
+{
+  "strict_0.6": {
+    "CD1_x100": {
+      "mean_difference": -2.066117885747114e-05,
+      "percentile_95_interval": [
+        -8.794530084023322e-05,
+        4.732587347818304e-05
+      ],
+      "lower": 21,
+      "higher": 18,
+      "equal": 1
+    },
+    "CD2_x1e5": {
+      "mean_difference": 2.6744238700774844e-05,
+      "percentile_95_interval": [
+        -0.0002603478259333211,
+        0.0003171914124975407
+      ],
+      "lower": 16,
+      "higher": 23,
+      "equal": 1
+    },
+    "Precision": {
+      "mean_difference": -9.200000000000042e-05,
+      "percentile_95_interval": [
+        -0.00026041666666666856,
+        7.824999999997709e-05
+      ],
+      "lower": 23,
+      "higher": 14,
+      "equal": 3
+    },
+    "Recall": {
+      "mean_difference": -5.758333333333865e-05,
+      "percentile_95_interval": [
+        -0.00020208333333334173,
+        0.00010342083333333613
+      ],
+      "lower": 22,
+      "higher": 16,
+      "equal": 2
+    },
+    "F1_at_0_003": {
+      "mean_difference": -7.492475419408895e-05,
+      "percentile_95_interval": [
+        -0.0002142374787794296,
+        7.631363223318905e-05
+      ],
+      "lower": 22,
+      "higher": 16,
+      "equal": 2
+    },
+    "NC": {
+      "mean_difference": -5.418711404399368e-05,
+      "percentile_95_interval": [
+        -0.0001237243415315925,
+        9.797247845896433e-06
+      ],
+      "lower": 23,
+      "higher": 16,
+      "equal": 1
+    },
+    "triangles": {
+      "mean_difference": -17.45,
+      "percentile_95_interval": [
+        -24.85,
+        -11.6
+      ],
+      "lower": 39,
+      "higher": 0,
+      "equal": 1
+    },
+    "boundary_edges": {
+      "mean_difference": 2.0,
+      "percentile_95_interval": [
+        -1.15,
+        5.7
+      ],
+      "lower": 13,
+      "higher": 21,
+      "equal": 6
+    },
+    "boundary_edge_fraction": {
+      "mean_difference": 3.1236634539302765e-05,
+      "percentile_95_interval": [
+        -9.830944924281473e-05,
+        0.0001411946183713367
+      ],
+      "lower": 13,
+      "higher": 26,
+      "equal": 1
+    },
+    "nonmanifold_edges": {
+      "mean_difference": -25.775,
+      "percentile_95_interval": [
+        -33.225,
+        -19.175
+      ],
+      "lower": 39,
+      "higher": 0,
+      "equal": 1
+    },
+    "nonmanifold_edge_fraction": {
+      "mean_difference": -0.0008429968510850957,
+      "percentile_95_interval": [
+        -0.0011548504887556274,
+        -0.0005847164733013653
+      ],
+      "lower": 39,
+      "higher": 0,
+      "equal": 1
+    },
+    "degenerate_faces": {
+      "mean_difference": 0.0,
+      "percentile_95_interval": [
+        0.0,
+        0.0
+      ],
+      "lower": 0,
+      "higher": 0,
+      "equal": 40
+    },
+    "SurfaceCD1_x100": {
+      "mean_difference": 2.806239107117081e-05,
+      "percentile_95_interval": [
+        9.129478766072008e-06,
+        5.2593405814392584e-05
+      ],
+      "lower": 8,
+      "higher": 31,
+      "equal": 1
+    },
+    "SurfaceCD2_x1e5": {
+      "mean_difference": 7.884052237794404e-05,
+      "percentile_95_interval": [
+        2.4614442421979276e-05,
+        0.00014806579419920167
+      ],
+      "lower": 9,
+      "higher": 30,
+      "equal": 1
+    }
+  },
+  "planar_repaired": {
+    "CD1_x100": {
+      "mean_difference": -1.1396438564259536e-05,
+      "percentile_95_interval": [
+        -0.0001021540561551184,
+        8.45067218567e-05
+      ],
+      "lower": 20,
+      "higher": 17,
+      "equal": 3
+    },
+    "CD2_x1e5": {
+      "mean_difference": -9.959216309105706e-06,
+      "percentile_95_interval": [
+        -0.00034308988404818566,
+        0.0003417632296833386
+      ],
+      "lower": 21,
+      "higher": 16,
+      "equal": 3
+    },
+    "Precision": {
+      "mean_difference": -9.508333333334285e-05,
+      "percentile_95_interval": [
+        -0.0002453354166666831,
+        4.9666666666656546e-05
+      ],
+      "lower": 19,
+      "higher": 17,
+      "equal": 4
+    },
+    "Recall": {
+      "mean_difference": -5.975000000001396e-05,
+      "percentile_95_interval": [
+        -0.00024208333333335954,
+        0.00012974999999997106
+      ],
+      "lower": 18,
+      "higher": 18,
+      "equal": 4
+    },
+    "F1_at_0_003": {
+      "mean_difference": -7.753889122180946e-05,
+      "percentile_95_interval": [
+        -0.00020101496235414164,
+        4.8568232351474507e-05
+      ],
+      "lower": 22,
+      "higher": 14,
+      "equal": 4
+    },
+    "NC": {
+      "mean_difference": 3.739657850184153e-05,
+      "percentile_95_interval": [
+        -2.7572468555735335e-05,
+        0.00010827849913313024
+      ],
+      "lower": 17,
+      "higher": 20,
+      "equal": 3
+    },
+    "triangles": {
+      "mean_difference": -17.225,
+      "percentile_95_interval": [
+        -22.45,
+        -13.0
+      ],
+      "lower": 37,
+      "higher": 0,
+      "equal": 3
+    },
+    "boundary_edges": {
+      "mean_difference": -8.425,
+      "percentile_95_interval": [
+        -10.9,
+        -6.35
+      ],
+      "lower": 37,
+      "higher": 0,
+      "equal": 3
+    },
+    "boundary_edge_fraction": {
+      "mean_difference": -0.0002341725655423779,
+      "percentile_95_interval": [
+        -0.0002877540707351979,
+        -0.000185985124166735
+      ],
+      "lower": 37,
+      "higher": 0,
+      "equal": 3
+    },
+    "nonmanifold_edges": {
+      "mean_difference": -34.125,
+      "percentile_95_interval": [
+        -44.300625,
+        -25.8
+      ],
+      "lower": 37,
+      "higher": 0,
+      "equal": 3
+    },
+    "nonmanifold_edge_fraction": {
+      "mean_difference": -0.000969462264159492,
+      "percentile_95_interval": [
+        -0.0011917513775688857,
+        -0.0007705187173066896
+      ],
+      "lower": 37,
+      "higher": 0,
+      "equal": 3
+    },
+    "degenerate_faces": {
+      "mean_difference": 0.0,
+      "percentile_95_interval": [
+        0.0,
+        0.0
+      ],
+      "lower": 0,
+      "higher": 0,
+      "equal": 40
+    },
+    "SurfaceCD1_x100": {
+      "mean_difference": 4.037824352376429e-06,
+      "percentile_95_interval": [
+        1.6182562549704738e-07,
+        1.0930825039147383e-05
+      ],
+      "lower": 13,
+      "higher": 24,
+      "equal": 3
+    },
+    "SurfaceCD2_x1e5": {
+      "mean_difference": 1.6215122645102597e-05,
+      "percentile_95_interval": [
+        -1.0167632978171665e-07,
+        4.4173650423025035e-05
+      ],
+      "lower": 16,
+      "higher": 20,
+      "equal": 4
+    }
+  }
+}

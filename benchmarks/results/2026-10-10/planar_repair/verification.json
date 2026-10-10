@@ -1,0 +1,76 @@
+{
+  "sources_match": true,
+  "weights_match": true,
+  "row_counts": {
+    "development_raw.csv": 144,
+    "test_raw.csv": 360,
+    "test_per_shape.csv": 120,
+    "timing_raw.csv": 360,
+    "repair_per_shape.csv": 56
+  },
+  "raw_and_summary_agree": true,
+  "all_40_vertex_arrays_unchanged_and_topology_guards_hold": true,
+  "real_cli_matches_experiment_byte_for_byte": true,
+  "heldout_count": 38,
+  "heldout_samples": [
+    "00001006_6962bc8aad2c4e27b046d5b4_trimesh_008.ply",
+    "00045193_b69af8efe1044bc0a939de36_trimesh_002.ply",
+    "00006822_c1534e8543a94f33aeeae03e_trimesh_002.ply",
+    "00039797_adcb2fa3666b48bd8933f10c_trimesh_009.ply",
+    "00005277_a8ded82a1fd74021ac459ffb_trimesh_013.ply",
+    "00052990_e1f3fdac7cdf42b0b876329c_trimesh_004.ply",
+    "00021144_549f0c29542541baa6fdf3c9_trimesh_000.ply",
+    "00054842_dee0bf07f7d64ced8e7389be_trimesh_000.ply",
+    "00048922_5b10296f721a4f8c81b3a0ac_trimesh_003.ply",
+    "00036742_0f3d29b03c15430f85ba40c9_trimesh_000.ply",
+    "00003702_6ebd53ae9f35478bb908be54_trimesh_001.ply",
+    "00023706_782c55a38ce7421faaeb2898_trimesh_003.ply",
+    "00032032_9f5bcf378f0e4944bb6907c2_trimesh_000.ply",
+    "00041500_75151c13b7ea4add97fd4381_trimesh_001.ply",
+    "00054282_3ae9de8518614213919d8477_trimesh_001.ply",
+    "00054802_a404d23dc8534c99bcaf7dc3_trimesh_008.ply",
+    "00036372_98472b6a279349a2b942dedf_trimesh_000.ply",
+    "00041996_2686654542df4ae39efd05b4_trimesh_003.ply",
+    "00021126_de3e556f2881489d9d102d69_trimesh_000.ply",
+    "00054127_4f3398b65b35455f87824aa4_trimesh_000.ply",
+    "00051397_dc398ce8e5354043a1e8d208_trimesh_003.ply",
+    "00028399_278929da359a45eca29d7de2_trimesh_000.ply",
+    "00033036_767efcae9b9649fe961ebaab_trimesh_002.ply",
+    "00000274_648a7c23a21f4e88bf25ffeb_trimesh_002.ply",
+    "00018694_5730a99bb83a42d19bd5d69c_trimesh_000.ply",
+    "00017930_752778aeefb145dfb73e1e5c_trimesh_000.ply",
+    "00026479_caa4977e55f24092ae104c1c_trimesh_000.ply",
+    "00000699_cae88f0aaaf34de597863810_trimesh_000.ply",
+    "00039882_a246390e46ec4d75b04a081b_trimesh_006.ply",
+    "00006278_1057ca83f2264404aa6cd16d_trimesh_000.ply",
+    "00021041_51b9c363a70142c1b4e6f1a3_trimesh_000.ply",
+    "00053988_c2b1b74c7fbd42248d454566_trimesh_001.ply",
+    "00033355_2e0f13ba549f4aff80269717_trimesh_000.ply",
+    "00011966_8ee3fba81d5a4d61a14c44c2_trimesh_000.ply",
+    "00040358_7fc6975da5374aa08376db88_trimesh_003.ply",
+    "00016374_5d383e5ea4d14a0bbf363339_trimesh_001.ply",
+    "00042723_7b73668bafbe495183f98bb8_trimesh_000.ply",
+    "00007066_d654438ec58a44d6a567dd51_trimesh_003.ply"
+  ],
+  "excluded_byte_duplicates": [
+    {
+      "sample": "00042668_a29ed51c78f5429e92496951_trimesh_041.ply",
+      "duplicates": [
+        "00040500_02f164a8b28a4d3581d3d3e9_trimesh_000.ply",
+        "00053139_1945e4f3b59145d890905b9d_trimesh_009.ply"
+      ]
+    },
+    {
+      "sample": "00025485_765982d1aaef40448478d576_trimesh_002.ply",
+      "duplicates": [
+        "00048314_cd4cb42c8efe4021b765741b_trimesh_002.ply"
+      ]
+    }
+  ],
+  "deduplication_note": "Post-run byte-hash audit; no metric-dependent exclusion. Original 40-case records are retained.",
+  "unit_tests": {
+    "extract_face": 13,
+    "planar_repair": 5,
+    "passed": true
+  }
+}

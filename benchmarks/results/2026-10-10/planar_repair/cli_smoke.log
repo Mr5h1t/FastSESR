@@ -1,0 +1,21 @@
+/home/syx/data/miniconda3/envs/dcx/lib/python3.11/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+[Recon] Using checkpoint delta from meta: delta=0.0
+[Recon][S2ReconNet] Detected lowrank checkpoint: use_pair_lowrank=True, pair_rank=32
+[S2ReconNet] Loaded S1 best weights from 'S1_training/model_k50/best_model'. Missing: 0, Unexpected: 0
+[Warn] Strict load failed: Error(s) in loading state_dict for LoonUNet:
+	Unexpected key(s) in state_dict: "fp32.mlp.0.weight", "fp32.mlp.1.weight", "fp32.mlp.1.bias", "fp32.mlp.3.weight", "fp32.mlp.4.weight", "fp32.mlp.4.bias", "fp32.mlp.6.weight", "fp32.mlp.6.bias", "dec_flat.conv1.weight", "dec_flat.conv1.bias", "dec_flat.gn1.weight", "dec_flat.gn1.bias", "dec_flat.conv2.weight", "dec_flat.conv2.bias", "enc.l5.conv.weight", "enc.l5.gn.weight", "enc.l5.gn.bias", "bottleneck.gat_cell.step_scale", "bottleneck.gat_cell.lin_q.weight", "bottleneck.gat_cell.lin_k.weight", "bottleneck.gat_cell.lin_v.weight", "bottleneck.gat_cell.att_mlp.0.weight", "bottleneck.gat_cell.att_mlp.0.bias", "bottleneck.gat_cell.att_mlp.2.weight", "bottleneck.gat_cell.att_mlp.2.bias", "bottleneck.gat_cell.out_mlp.0.weight", "bottleneck.gat_cell.out_mlp.0.bias", "bottleneck.gat_cell.out_mlp.2.weight", "bottleneck.gat_cell.out_mlp.2.bias". 
+       Falling back to strict=False...
+[Warn] unexpected keys: 29 (show up to 10): ['fp32.mlp.0.weight', 'fp32.mlp.1.weight', 'fp32.mlp.1.bias', 'fp32.mlp.3.weight', 'fp32.mlp.4.weight', 'fp32.mlp.4.bias', 'fp32.mlp.6.weight', 'fp32.mlp.6.bias', 'dec_flat.conv1.weight', 'dec_flat.conv1.bias']
+[Info] Using LOON-UNet params: unet_k=16, no_pyramid=True, unet_ratio1=0.25, unet_ratio2=0.25, unet_hidden=64, unet_T=2, unet_K=50, f_dim=128, use_q_as_feat=True, share_offset_former=True, delta=0.0
+[Info] LOON-UNet parameter snapshot:
+  detected bottleneck.f_dim = 128
+  enc.l4.conv.weight: shape=(128, 128, 1, 1), requires_grad=True
+  total_params=445,078, trainable_params=101,323
+  checkpoint_keys=212, model_keys=183, missing_in_ckpt=0, unexpected_in_ckpt=29
+   unexpected (up to 10): ['bottleneck.gat_cell.att_mlp.2.bias', 'bottleneck.gat_cell.lin_q.weight', 'dec_flat.gn1.weight', 'dec_flat.conv2.bias', 'dec_flat.conv1.weight', 'fp32.mlp.4.weight', 'bottleneck.gat_cell.out_mlp.2.weight', 'bottleneck.gat_cell.att_mlp.0.bias', 'fp32.mlp.4.bias', 'fp32.mlp.1.bias']
+[Recon] Face extraction config: {'confidence_top1': 0.8, 'confidence_top2': 0.5, 'face_angle': 120.0, 'face_quality_weight': 0.0, 'face_quality_target': 0.2, 'repair_planar_overlaps': True, 'planar_tolerance': 1e-06}
+Reconstruct ABC_test:   0%|          | 0/1 [00:00<?, ?file/s]Reconstruct ABC_test:   0%|          | 0/1 [00:01<?, ?file/s, time=1.00s, method=LOON-UNet]Reconstruct ABC_test: 100%|██████████| 1/1 [00:01<00:00,  1.01s/file, time=1.00s, method=LOON-UNet]Reconstruct ABC_test: 100%|██████████| 1/1 [00:01<00:00,  1.01s/file, time=1.00s, method=LOON-UNet]
+[Info] Wrote per-file stats to benchmarks/results/2026-10-10/planar_repair/cli_selected_smoke/reconstruction_stats.txt
+[Info] Reconstructed 1 files. Average time per file: 1.00s
+[Info] Max points sample: 00023706_782c55a38ce7421faaeb2898_trimesh_003.ply, num_points=8520, time=1.00s

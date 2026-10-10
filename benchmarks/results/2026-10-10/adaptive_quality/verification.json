@@ -1,0 +1,9 @@
+{
+  "executed_source_hashes_match": true,
+  "weight_hashes_match": true,
+  "expected_row_counts_match": true,
+  "selected_zero_weight_metrics_equal_control": true,
+  "post_run_byte_duplicate_samples": [
+    "00040500_02f164a8b28a4d3581d3d3e9_trimesh_000.ply"
+  ]
+}

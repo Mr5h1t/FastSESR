@@ -1,0 +1,2 @@
+# Optional planar-overlap repair; main project dependencies also required.
+shapely>=2.0,<3

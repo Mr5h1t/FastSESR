@@ -36,12 +36,18 @@ parser.add_argument('--delta', type=float, default=None,help='Override surface v
 parser.add_argument('--confidence_top1', type=float, default=0.8, help='Top-1 triangle confidence threshold (default: 0.8)')
 parser.add_argument('--confidence_top2', type=float, default=0.5, help='Top-2 triangle confidence threshold (default: 0.5)')
 parser.add_argument('--face_angle', type=float, default=120.0, help='Angle condition in degrees for the top-2 triangle pair (default: 120)')
+parser.add_argument('--face_quality_weight', type=float, default=0.0, help='Geometry-adaptive Top-2 threshold weight; 0 preserves fixed thresholds')
+parser.add_argument('--face_quality_target', type=float, default=0.2, help='Triangle-pair quality at which the base Top-2 threshold is used')
+parser.add_argument('--repair_planar_overlaps', action='store_true', help='Retriangulate overlapping planar patches while checking coverage and seams')
+parser.add_argument('--planar_tolerance', type=float, default=1e-6, help='Maximum patch plane deviation relative to bbox diagonal')
 opt = parser.parse_args()
+if not np.isfinite(opt.planar_tolerance) or not 0 < opt.planar_tolerance <= 1e-3:
+    parser.error('Plane tolerance must be in (0, 1e-3].')
 try:
-    SurfExtract(opt.confidence_top1, opt.confidence_top2, opt.face_angle)
+    SurfExtract(opt.confidence_top1, opt.confidence_top2, opt.face_angle, opt.face_quality_weight, opt.face_quality_target)
 except ValueError as error:
     parser.error(str(error))
-if not (opt.use_loon_unet or opt.use_loon) and (opt.confidence_top1, opt.confidence_top2, opt.face_angle) != (0.8, 0.5, 120.0):
+if not (opt.use_loon_unet or opt.use_loon) and (opt.confidence_top1, opt.confidence_top2, opt.face_angle, opt.face_quality_weight, opt.face_quality_target) != (0.8, 0.5, 120.0, 0.0, 0.2):
     parser.error('Custom face thresholds require --use_loon_unet or --use_loon.')
 
 
@@ -444,7 +450,11 @@ if __name__=='__main__':
         loon_unet = None
     if opt.use_loon_unet or opt.use_loon:
         face_config = {'confidence_top1': opt.confidence_top1,
-                       'confidence_top2': opt.confidence_top2, 'face_angle': opt.face_angle}
+                       'confidence_top2': opt.confidence_top2, 'face_angle': opt.face_angle,
+                       'face_quality_weight': opt.face_quality_weight,
+                       'face_quality_target': opt.face_quality_target,
+                       'repair_planar_overlaps': opt.repair_planar_overlaps,
+                       'planar_tolerance': opt.planar_tolerance}
         print(f"[Recon] Face extraction config: {face_config}")
         with open(os.path.join(results_folder, 'face_extraction_config.json'), 'w') as stream:
             json.dump(face_config, stream, indent=2)
@@ -459,6 +469,7 @@ if __name__=='__main__':
         print(f"[Warn] Failed to open stats file {stats_path}: {e}")
         stats_file = None
     idx = 0
+    repair_records = []
     pbar = tqdm(total=len(test_files), desc=f"Reconstruct {opt.dataset}", unit="file")
     for data in testLoader:
         data = [item[0] for item in data]
@@ -481,7 +492,7 @@ if __name__=='__main__':
             final_offsets = dP0_b3n.squeeze(0).t().contiguous() # [N,3]
 
             knn_idx_dev = knn_indices.to(device)
-            extractor = SurfExtract(opt.confidence_top1, opt.confidence_top2, opt.face_angle)
+            extractor = SurfExtract(opt.confidence_top1, opt.confidence_top2, opt.face_angle, opt.face_quality_weight, opt.face_quality_target)
             N_total = points_dev.shape[0]
             step = max(1, opt.chunk_size)
             all_tris = []
@@ -514,7 +525,7 @@ if __name__=='__main__':
             final_offsets = loon(points_dev, model, create_graph=False)  # [N, 3]
 
             knn_idx_dev = knn_indices.to(device)
-            extractor = SurfExtract(opt.confidence_top1, opt.confidence_top2, opt.face_angle)
+            extractor = SurfExtract(opt.confidence_top1, opt.confidence_top2, opt.face_angle, opt.face_quality_weight, opt.face_quality_target)
             N_total = points_dev.shape[0]
             step = max(1, opt.chunk_size)
             all_tris = []
@@ -540,6 +551,12 @@ if __name__=='__main__':
             mesh.vertices = o3d.utility.Vector3dVector(pts_world)
             mesh.triangles = o3d.utility.Vector3iVector(tris_np) if tris_np is not None else o3d.utility.Vector3iVector([])
             recon_mesh = mesh
+        if opt.repair_planar_overlaps:
+            from S2.PlanarRepair import repair_planar_overlaps
+            repaired, repair_stats = repair_planar_overlaps(
+                np.asarray(recon_mesh.vertices), np.asarray(recon_mesh.triangles), opt.planar_tolerance)
+            recon_mesh.triangles = o3d.utility.Vector3iVector(repaired)
+            repair_records.append({'sample': os.path.basename(test_files[idx]), **repair_stats})
         runtime[idx] = time()-start_time
         try:
             if stats_file is not None:
@@ -578,6 +595,9 @@ if __name__=='__main__':
             print(f"[Info] Wrote per-file stats to {stats_path}")
     except Exception:
         pass
+    if opt.repair_planar_overlaps:
+        with open(os.path.join(results_folder, 'planar_repair_stats.json'), 'w') as stream:
+            json.dump(repair_records, stream, indent=2)
     try:
         n_done = idx
         if n_done > 0:

@@ -1,0 +1,54 @@
+{
+  "plane_tolerance": 1e-06,
+  "test_samples_evaluated": 0,
+  "development_summary": {
+    "baseline": {
+      "CD1_x100": 0.28269555173128275,
+      "CD2_x1e5": 0.5371520141493114,
+      "Precision": 0.952156875,
+      "Recall": 0.9521345833333332,
+      "F1_at_0_003": 0.9521453435599087,
+      "NC": 0.9896557997819464,
+      "triangles": 23339.8125,
+      "boundary_edges": 16.875,
+      "boundary_edge_fraction": 0.0005020972939796941,
+      "nonmanifold_edges": 66.5,
+      "nonmanifold_edge_fraction": 0.0019960209794081083,
+      "degenerate_faces": 0.0,
+      "SurfaceCD1_x100": 5.126484951128996e-06,
+      "SurfaceCD2_x1e5": 1.530514138940228e-06
+    },
+    "strict_0.6": {
+      "CD1_x100": 0.28255010843811756,
+      "CD2_x1e5": 0.5366232021807121,
+      "Precision": 0.9522354166666668,
+      "Recall": 0.9523195833333334,
+      "F1_at_0_003": 0.9522772041630024,
+      "NC": 0.9897638178230223,
+      "triangles": 23323.5625,
+      "boundary_edges": 19.1875,
+      "boundary_edge_fraction": 0.0005519698210426188,
+      "nonmanifold_edges": 38.0625,
+      "nonmanifold_edge_fraction": 0.0011949454505529396,
+      "degenerate_faces": 0.0,
+      "SurfaceCD1_x100": 9.033086915966049e-06,
+      "SurfaceCD2_x1e5": 5.5840636083023405e-06
+    },
+    "planar_repaired": {
+      "CD1_x100": 0.28275564176259205,
+      "CD2_x1e5": 0.5374360511851205,
+      "Precision": 0.9519577083333332,
+      "Recall": 0.952095,
+      "F1_at_0_003": 0.9520259332872568,
+      "NC": 0.9897102544972012,
+      "triangles": 23321.0,
+      "boundary_edges": 7.9375,
+      "boundary_edge_fraction": 0.00024084550548186733,
+      "nonmanifold_edges": 29.0625,
+      "nonmanifold_edge_fraction": 0.0009118408942906985,
+      "degenerate_faces": 0.0,
+      "SurfaceCD1_x100": 5.426226690197211e-06,
+      "SurfaceCD2_x1e5": 1.7464733550296762e-06
+    }
+  }
+}

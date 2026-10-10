@@ -1,0 +1,230 @@
+{
+  "strict_0.6": {
+    "CD1_x100": {
+      "mean_difference": -2.4189722771168692e-05,
+      "percentile_95_interval": [
+        -9.565173875531999e-05,
+        4.662452168022985e-05
+      ]
+    },
+    "CD2_x1e5": {
+      "mean_difference": 2.608165811482596e-05,
+      "percentile_95_interval": [
+        -0.00028064739796242086,
+        0.0003239903076570056
+      ]
+    },
+    "Precision": {
+      "mean_difference": -0.00010026315789473632,
+      "percentile_95_interval": [
+        -0.00027658333333334796,
+        7.710526315788581e-05
+      ]
+    },
+    "Recall": {
+      "mean_difference": -6.622807017544299e-05,
+      "percentile_95_interval": [
+        -0.00021666885964911656,
+        0.00010000438596489546
+      ]
+    },
+    "F1_at_0_003": {
+      "mean_difference": -8.338608735866524e-05,
+      "percentile_95_interval": [
+        -0.00022952815986012007,
+        7.218642395152089e-05
+      ]
+    },
+    "NC": {
+      "mean_difference": -5.27832957111434e-05,
+      "percentile_95_interval": [
+        -0.00012532666910241297,
+        1.5304217453699207e-05
+      ]
+    },
+    "triangles": {
+      "mean_difference": -17.710526315789473,
+      "percentile_95_interval": [
+        -25.342105263157894,
+        -11.68421052631579
+      ]
+    },
+    "boundary_edges": {
+      "mean_difference": 2.1578947368421053,
+      "percentile_95_interval": [
+        -1.0532894736842098,
+        5.947368421052632
+      ]
+    },
+    "boundary_edge_fraction": {
+      "mean_difference": 3.0706009787123234e-05,
+      "percentile_95_interval": [
+        -0.00010277420534261133,
+        0.00014618411547413638
+      ]
+    },
+    "nonmanifold_edges": {
+      "mean_difference": -26.105263157894736,
+      "percentile_95_interval": [
+        -33.86907894736842,
+        -19.44736842105263
+      ]
+    },
+    "nonmanifold_edge_fraction": {
+      "mean_difference": -0.0008551013306472473,
+      "percentile_95_interval": [
+        -0.0011888317612937483,
+        -0.0005897574232952506
+      ]
+    },
+    "degenerate_faces": {
+      "mean_difference": 0.0,
+      "percentile_95_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    "SurfaceCD1_x100": {
+      "mean_difference": 2.7994090426162655e-05,
+      "percentile_95_interval": [
+        7.953400627711432e-06,
+        5.3227642245993886e-05
+      ]
+    },
+    "SurfaceCD2_x1e5": {
+      "mean_difference": 7.660548110988136e-05,
+      "percentile_95_interval": [
+        1.9662945207962778e-05,
+        0.00014738637640362808
+      ]
+    },
+    "seconds": {
+      "mean_difference": 9.09990385959023e-06,
+      "percentile_95_interval": [
+        -0.00013470417623849293,
+        0.0001478913215626227
+      ]
+    },
+    "extra_peak_mib": {
+      "mean_difference": -0.00026983963815789476,
+      "percentile_95_interval": [
+        -0.0003726356907894737,
+        -0.0001670435855263158
+      ]
+    }
+  },
+  "planar_repaired": {
+    "CD1_x100": {
+      "mean_difference": -8.195192927539755e-06,
+      "percentile_95_interval": [
+        -0.00010416472665743704,
+        9.09099542809909e-05
+      ]
+    },
+    "CD2_x1e5": {
+      "mean_difference": 1.3846564727706956e-05,
+      "percentile_95_interval": [
+        -0.0003293481325437025,
+        0.00037166759304644377
+      ]
+    },
+    "Precision": {
+      "mean_difference": -0.00011561403508772876,
+      "percentile_95_interval": [
+        -0.0002693859649122955,
+        3.4826754385976106e-05
+      ]
+    },
+    "Recall": {
+      "mean_difference": -6.798245614036384e-05,
+      "percentile_95_interval": [
+        -0.00026140570175438386,
+        0.0001318442982455982
+      ]
+    },
+    "F1_at_0_003": {
+      "mean_difference": -9.192870180567925e-05,
+      "percentile_95_interval": [
+        -0.00021727114180216113,
+        3.756976099163862e-05
+      ]
+    },
+    "NC": {
+      "mean_difference": 3.697407804079269e-05,
+      "percentile_95_interval": [
+        -3.054838151227533e-05,
+        0.00011067336322255144
+      ]
+    },
+    "triangles": {
+      "mean_difference": -17.394736842105264,
+      "percentile_95_interval": [
+        -22.711184210526316,
+        -13.131578947368421
+      ]
+    },
+    "boundary_edges": {
+      "mean_difference": -8.421052631578947,
+      "percentile_95_interval": [
+        -10.868421052631579,
+        -6.315789473684211
+      ]
+    },
+    "boundary_edge_fraction": {
+      "mean_difference": -0.00023544762207550508,
+      "percentile_95_interval": [
+        -0.0002887076698136714,
+        -0.0001872870493403251
+      ]
+    },
+    "nonmanifold_edges": {
+      "mean_difference": -34.473684210526315,
+      "percentile_95_interval": [
+        -44.86842105263158,
+        -26.13157894736842
+      ]
+    },
+    "nonmanifold_edge_fraction": {
+      "mean_difference": -0.0009847320274127185,
+      "percentile_95_interval": [
+        -0.0012081521721919305,
+        -0.0007829148781768419
+      ]
+    },
+    "degenerate_faces": {
+      "mean_difference": 0.0,
+      "percentile_95_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    "SurfaceCD1_x100": {
+      "mean_difference": 4.301788008557943e-06,
+      "percentile_95_interval": [
+        2.250922903331667e-07,
+        1.1567654168124978e-05
+      ]
+    },
+    "SurfaceCD2_x1e5": {
+      "mean_difference": 1.7129000481692622e-05,
+      "percentile_95_interval": [
+        -4.9453151585906306e-08,
+        4.649140754175697e-05
+      ]
+    },
+    "seconds": {
+      "mean_difference": 0.6398966988107484,
+      "percentile_95_interval": [
+        0.5230239378086193,
+        0.7671806806741331
+      ]
+    },
+    "extra_peak_mib": {
+      "mean_difference": 0.0,
+      "percentile_95_interval": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

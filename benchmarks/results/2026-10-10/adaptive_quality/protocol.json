@@ -1,0 +1,419 @@
+{
+  "seed": 20261010,
+  "development_samples": [
+    {
+      "name": "00053139_1945e4f3b59145d890905b9d_trimesh_009.ply",
+      "vertices": 2134,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00053139_1945e4f3b59145d890905b9d_trimesh_009.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00053139_1945e4f3b59145d890905b9d_trimesh_009.ply"
+    },
+    {
+      "name": "00035473_e5d0add05e794cab96bf1a71_trimesh_000.ply",
+      "vertices": 4282,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00035473_e5d0add05e794cab96bf1a71_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00035473_e5d0add05e794cab96bf1a71_trimesh_000.ply"
+    },
+    {
+      "name": "00020585_63916f67a00044a894aae2ff_trimesh_000.ply",
+      "vertices": 5969,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00020585_63916f67a00044a894aae2ff_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00020585_63916f67a00044a894aae2ff_trimesh_000.ply"
+    },
+    {
+      "name": "00056111_b885cff0664c4666975d653e_trimesh_000.ply",
+      "vertices": 7378,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00056111_b885cff0664c4666975d653e_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00056111_b885cff0664c4666975d653e_trimesh_000.ply"
+    },
+    {
+      "name": "00051873_920d8a06814e4ddeaa012a23_trimesh_007.ply",
+      "vertices": 8600,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00051873_920d8a06814e4ddeaa012a23_trimesh_007.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00051873_920d8a06814e4ddeaa012a23_trimesh_007.ply"
+    },
+    {
+      "name": "00010386_289cf5e5fc0246f19cd8bb75_trimesh_001.ply",
+      "vertices": 9803,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00010386_289cf5e5fc0246f19cd8bb75_trimesh_001.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00010386_289cf5e5fc0246f19cd8bb75_trimesh_001.ply"
+    },
+    {
+      "name": "00034428_01d7addfe23343f999026f90_trimesh_000.ply",
+      "vertices": 10978,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00034428_01d7addfe23343f999026f90_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00034428_01d7addfe23343f999026f90_trimesh_000.ply"
+    },
+    {
+      "name": "00058754_ec6875c3bb9d405789785b2b_trimesh_000.ply",
+      "vertices": 11964,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00058754_ec6875c3bb9d405789785b2b_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00058754_ec6875c3bb9d405789785b2b_trimesh_000.ply"
+    },
+    {
+      "name": "00041223_5b0154277ee14987bdbed000_trimesh_010.ply",
+      "vertices": 12882,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00041223_5b0154277ee14987bdbed000_trimesh_010.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00041223_5b0154277ee14987bdbed000_trimesh_010.ply"
+    },
+    {
+      "name": "00029044_914cae8642e24d87ad71989f_trimesh_005.ply",
+      "vertices": 13681,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00029044_914cae8642e24d87ad71989f_trimesh_005.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00029044_914cae8642e24d87ad71989f_trimesh_005.ply"
+    },
+    {
+      "name": "00031999_7231bfdc871d47feb9a4489c_trimesh_000.ply",
+      "vertices": 14351,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00031999_7231bfdc871d47feb9a4489c_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00031999_7231bfdc871d47feb9a4489c_trimesh_000.ply"
+    },
+    {
+      "name": "00036900_4893027908cc456f82087c02_trimesh_000.ply",
+      "vertices": 15107,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00036900_4893027908cc456f82087c02_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00036900_4893027908cc456f82087c02_trimesh_000.ply"
+    },
+    {
+      "name": "00026983_3f5d177b1de9411b9e5c4d0e_trimesh_000.ply",
+      "vertices": 15942,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00026983_3f5d177b1de9411b9e5c4d0e_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00026983_3f5d177b1de9411b9e5c4d0e_trimesh_000.ply"
+    },
+    {
+      "name": "00017462_28a7687e4fae472399c06676_trimesh_005.ply",
+      "vertices": 16863,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00017462_28a7687e4fae472399c06676_trimesh_005.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00017462_28a7687e4fae472399c06676_trimesh_005.ply"
+    },
+    {
+      "name": "00053548_6878aa6081024ca98c309660_trimesh_008.ply",
+      "vertices": 17803,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00053548_6878aa6081024ca98c309660_trimesh_008.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00053548_6878aa6081024ca98c309660_trimesh_008.ply"
+    },
+    {
+      "name": "00022672_f05484a2894d48eca5d703e4_trimesh_003.ply",
+      "vertices": 18669,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00022672_f05484a2894d48eca5d703e4_trimesh_003.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00022672_f05484a2894d48eca5d703e4_trimesh_003.ply"
+    }
+  ],
+  "test_samples": [
+    {
+      "name": "00050509_1b20dddc3a074b76b10f1310_trimesh_030.ply",
+      "vertices": 1272,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00050509_1b20dddc3a074b76b10f1310_trimesh_030.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00050509_1b20dddc3a074b76b10f1310_trimesh_030.ply"
+    },
+    {
+      "name": "00040500_02f164a8b28a4d3581d3d3e9_trimesh_000.ply",
+      "vertices": 2134,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00040500_02f164a8b28a4d3581d3d3e9_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00040500_02f164a8b28a4d3581d3d3e9_trimesh_000.ply"
+    },
+    {
+      "name": "00056483_627fc791896e4e78997b3a38_trimesh_006.ply",
+      "vertices": 2852,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00056483_627fc791896e4e78997b3a38_trimesh_006.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00056483_627fc791896e4e78997b3a38_trimesh_006.ply"
+    },
+    {
+      "name": "00053207_4d20bfa61cd04b1b82f18a5c_trimesh_000.ply",
+      "vertices": 3710,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00053207_4d20bfa61cd04b1b82f18a5c_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00053207_4d20bfa61cd04b1b82f18a5c_trimesh_000.ply"
+    },
+    {
+      "name": "00053742_2503747be7ce4232a79f509b_trimesh_001.ply",
+      "vertices": 4429,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00053742_2503747be7ce4232a79f509b_trimesh_001.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00053742_2503747be7ce4232a79f509b_trimesh_001.ply"
+    },
+    {
+      "name": "00059018_fdb24093d83e4ac89abbbc6f_trimesh_007.ply",
+      "vertices": 5040,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00059018_fdb24093d83e4ac89abbbc6f_trimesh_007.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00059018_fdb24093d83e4ac89abbbc6f_trimesh_007.ply"
+    },
+    {
+      "name": "00046445_0a12d126ec4a4f23a67461c1_trimesh_002.ply",
+      "vertices": 5610,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00046445_0a12d126ec4a4f23a67461c1_trimesh_002.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00046445_0a12d126ec4a4f23a67461c1_trimesh_002.ply"
+    },
+    {
+      "name": "00020931_f34e2c86348c4fa1ad53d944_trimesh_000.ply",
+      "vertices": 6022,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00020931_f34e2c86348c4fa1ad53d944_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00020931_f34e2c86348c4fa1ad53d944_trimesh_000.ply"
+    },
+    {
+      "name": "00041578_ff4a02f8c6ee422fbe79e803_trimesh_000.ply",
+      "vertices": 6495,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00041578_ff4a02f8c6ee422fbe79e803_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00041578_ff4a02f8c6ee422fbe79e803_trimesh_000.ply"
+    },
+    {
+      "name": "00054770_757fc7106561462385b2fb6f_trimesh_001.ply",
+      "vertices": 7036,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00054770_757fc7106561462385b2fb6f_trimesh_001.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00054770_757fc7106561462385b2fb6f_trimesh_001.ply"
+    },
+    {
+      "name": "00044434_af223b365a0342379f3bb061_trimesh_002.ply",
+      "vertices": 7550,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00044434_af223b365a0342379f3bb061_trimesh_002.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00044434_af223b365a0342379f3bb061_trimesh_002.ply"
+    },
+    {
+      "name": "00021696_13e7a49af55643e7869e2ae9_trimesh_000.ply",
+      "vertices": 8016,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00021696_13e7a49af55643e7869e2ae9_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00021696_13e7a49af55643e7869e2ae9_trimesh_000.ply"
+    },
+    {
+      "name": "00023710_4609b0b8f36d465eb0962ad9_trimesh_003.ply",
+      "vertices": 8520,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00023710_4609b0b8f36d465eb0962ad9_trimesh_003.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00023710_4609b0b8f36d465eb0962ad9_trimesh_003.ply"
+    },
+    {
+      "name": "00035543_75fc5a6c681e4ae1b452667e_trimesh_008.ply",
+      "vertices": 8782,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00035543_75fc5a6c681e4ae1b452667e_trimesh_008.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00035543_75fc5a6c681e4ae1b452667e_trimesh_008.ply"
+    },
+    {
+      "name": "00010802_45d813d16cbb43598ad59c25_trimesh_001.ply",
+      "vertices": 9256,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00010802_45d813d16cbb43598ad59c25_trimesh_001.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00010802_45d813d16cbb43598ad59c25_trimesh_001.ply"
+    },
+    {
+      "name": "00055611_f4750976e09349aca1832e84_trimesh_006.ply",
+      "vertices": 9718,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00055611_f4750976e09349aca1832e84_trimesh_006.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00055611_f4750976e09349aca1832e84_trimesh_006.ply"
+    },
+    {
+      "name": "00028614_9f60feb02f574e27ab971419_trimesh_000.ply",
+      "vertices": 10201,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00028614_9f60feb02f574e27ab971419_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00028614_9f60feb02f574e27ab971419_trimesh_000.ply"
+    },
+    {
+      "name": "00051390_b8c6279109104bf4a645722c_trimesh_001.ply",
+      "vertices": 10676,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00051390_b8c6279109104bf4a645722c_trimesh_001.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00051390_b8c6279109104bf4a645722c_trimesh_001.ply"
+    },
+    {
+      "name": "00025629_a869953ee8434c6dbf5adb02_trimesh_000.ply",
+      "vertices": 11081,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00025629_a869953ee8434c6dbf5adb02_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00025629_a869953ee8434c6dbf5adb02_trimesh_000.ply"
+    },
+    {
+      "name": "00022719_e7f7bc3fc04b42a29953bd33_trimesh_000.ply",
+      "vertices": 11560,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00022719_e7f7bc3fc04b42a29953bd33_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00022719_e7f7bc3fc04b42a29953bd33_trimesh_000.ply"
+    },
+    {
+      "name": "00011405_bc11f413a9ff43f6915cc7d5_trimesh_000.ply",
+      "vertices": 11978,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00011405_bc11f413a9ff43f6915cc7d5_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00011405_bc11f413a9ff43f6915cc7d5_trimesh_000.ply"
+    },
+    {
+      "name": "00056449_5eb51dd07263449f811d1637_trimesh_000.ply",
+      "vertices": 12362,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00056449_5eb51dd07263449f811d1637_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00056449_5eb51dd07263449f811d1637_trimesh_000.ply"
+    },
+    {
+      "name": "00029101_e9331410c607454c804cb518_trimesh_002.ply",
+      "vertices": 12741,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00029101_e9331410c607454c804cb518_trimesh_002.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00029101_e9331410c607454c804cb518_trimesh_002.ply"
+    },
+    {
+      "name": "00022202_6486fac7926b466eb736163a_trimesh_005.ply",
+      "vertices": 13141,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00022202_6486fac7926b466eb736163a_trimesh_005.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00022202_6486fac7926b466eb736163a_trimesh_005.ply"
+    },
+    {
+      "name": "00048314_cd4cb42c8efe4021b765741b_trimesh_002.ply",
+      "vertices": 13454,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00048314_cd4cb42c8efe4021b765741b_trimesh_002.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00048314_cd4cb42c8efe4021b765741b_trimesh_002.ply"
+    },
+    {
+      "name": "00026529_a306940ce32e4b0db2460dc2_trimesh_003.ply",
+      "vertices": 13847,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00026529_a306940ce32e4b0db2460dc2_trimesh_003.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00026529_a306940ce32e4b0db2460dc2_trimesh_003.ply"
+    },
+    {
+      "name": "00021272_8b0d4dace1064d53a394f654_trimesh_000.ply",
+      "vertices": 14199,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00021272_8b0d4dace1064d53a394f654_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00021272_8b0d4dace1064d53a394f654_trimesh_000.ply"
+    },
+    {
+      "name": "00002083_a0ea791f94cb4f918ead8b67_trimesh_003.ply",
+      "vertices": 14566,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00002083_a0ea791f94cb4f918ead8b67_trimesh_003.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00002083_a0ea791f94cb4f918ead8b67_trimesh_003.ply"
+    },
+    {
+      "name": "00032580_98cef7247f8e43c7bc62f90a_trimesh_000.ply",
+      "vertices": 14871,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00032580_98cef7247f8e43c7bc62f90a_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00032580_98cef7247f8e43c7bc62f90a_trimesh_000.ply"
+    },
+    {
+      "name": "00021884_a82877bdfbdb40e890c7d56e_trimesh_004.ply",
+      "vertices": 15208,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00021884_a82877bdfbdb40e890c7d56e_trimesh_004.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00021884_a82877bdfbdb40e890c7d56e_trimesh_004.ply"
+    },
+    {
+      "name": "00047446_cea49b86e1ee4c80abbd020c_trimesh_002.ply",
+      "vertices": 15524,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00047446_cea49b86e1ee4c80abbd020c_trimesh_002.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00047446_cea49b86e1ee4c80abbd020c_trimesh_002.ply"
+    },
+    {
+      "name": "00018456_6845785439aa42d4a51087ad_trimesh_000.ply",
+      "vertices": 15889,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00018456_6845785439aa42d4a51087ad_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00018456_6845785439aa42d4a51087ad_trimesh_000.ply"
+    },
+    {
+      "name": "00039895_5e5b3fe1ef88449ca4d73474_trimesh_000.ply",
+      "vertices": 16249,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00039895_5e5b3fe1ef88449ca4d73474_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00039895_5e5b3fe1ef88449ca4d73474_trimesh_000.ply"
+    },
+    {
+      "name": "00027121_5efcfce4ccad4a3a9fd9955b_trimesh_000.ply",
+      "vertices": 16686,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00027121_5efcfce4ccad4a3a9fd9955b_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00027121_5efcfce4ccad4a3a9fd9955b_trimesh_000.ply"
+    },
+    {
+      "name": "00002889_e435fac25ee84f3697893a36_trimesh_005.ply",
+      "vertices": 17033,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00002889_e435fac25ee84f3697893a36_trimesh_005.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00002889_e435fac25ee84f3697893a36_trimesh_005.ply"
+    },
+    {
+      "name": "00002733_82034c87704b46a891e498d6_trimesh_001.ply",
+      "vertices": 17431,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00002733_82034c87704b46a891e498d6_trimesh_001.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00002733_82034c87704b46a891e498d6_trimesh_001.ply"
+    },
+    {
+      "name": "00010090_5ae1ee45b583467fa009adc4_trimesh_001.ply",
+      "vertices": 17876,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00010090_5ae1ee45b583467fa009adc4_trimesh_001.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00010090_5ae1ee45b583467fa009adc4_trimesh_001.ply"
+    },
+    {
+      "name": "00013166_b80e2a1d85a645ccb9a18d1f_trimesh_001.ply",
+      "vertices": 18221,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00013166_b80e2a1d85a645ccb9a18d1f_trimesh_001.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00013166_b80e2a1d85a645ccb9a18d1f_trimesh_001.ply"
+    },
+    {
+      "name": "00023055_795f7f0da39d47deaa6407ea_trimesh_000.ply",
+      "vertices": 18501,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00023055_795f7f0da39d47deaa6407ea_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00023055_795f7f0da39d47deaa6407ea_trimesh_000.ply"
+    },
+    {
+      "name": "00058658_6e810fd7a7b8421fb81adcd5_trimesh_000.ply",
+      "vertices": 19083,
+      "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00058658_6e810fd7a7b8421fb81adcd5_trimesh_000.ply",
+      "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00058658_6e810fd7a7b8421fb81adcd5_trimesh_000.ply"
+    }
+  ],
+  "configs": [
+    {
+      "name": "baseline",
+      "quality_weight": 0.0,
+      "quality_target": 0.2,
+      "confidence_top2": 0.5
+    },
+    {
+      "name": "strict_0.6",
+      "quality_weight": 0.0,
+      "quality_target": 0.2,
+      "confidence_top2": 0.6
+    },
+    {
+      "name": "quality_w0.1_target0.1",
+      "quality_weight": 0.1,
+      "quality_target": 0.1,
+      "confidence_top2": 0.5
+    },
+    {
+      "name": "quality_w0.1_target0.2",
+      "quality_weight": 0.1,
+      "quality_target": 0.2,
+      "confidence_top2": 0.5
+    },
+    {
+      "name": "quality_w0.1_target0.4",
+      "quality_weight": 0.1,
+      "quality_target": 0.4,
+      "confidence_top2": 0.5
+    },
+    {
+      "name": "quality_w0.2_target0.1",
+      "quality_weight": 0.2,
+      "quality_target": 0.1,
+      "confidence_top2": 0.5
+    },
+    {
+      "name": "quality_w0.2_target0.2",
+      "quality_weight": 0.2,
+      "quality_target": 0.2,
+      "confidence_top2": 0.5
+    },
+    {
+      "name": "quality_w0.2_target0.4",
+      "quality_weight": 0.2,
+      "quality_target": 0.4,
+      "confidence_top2": 0.5
+    },
+    {
+      "name": "quality_w0.4_target0.1",
+      "quality_weight": 0.4,
+      "quality_target": 0.1,
+      "confidence_top2": 0.5
+    },
+    {
+      "name": "quality_w0.4_target0.2",
+      "quality_weight": 0.4,
+      "quality_target": 0.2,
+      "confidence_top2": 0.5
+    },
+    {
+      "name": "quality_w0.4_target0.4",
+      "quality_weight": 0.4,
+      "quality_target": 0.4,
+      "confidence_top2": 0.5
+    }
+  ],
+  "sample_count": 100000,
+  "development_sampling_seeds": 3,
+  "test_sampling_seeds": 3,
+  "timing_repeats": 3,
+  "selection_rule": "Minimize mean development CD1_x100 averaged over 3 surface-sampling seeds. Require F1 >= baseline-0.0005, Precision >= baseline-0.0005, boundary_edge_fraction <= baseline+0.0002, and point-to-mesh SurfaceCD1_x100 <= baseline*1.01+1e-7. Baseline participates; tie prefers baseline. Freeze before any new-test evaluation.",
+  "surface_distance_sample_count": 20000,
+  "split_note": "Reuse previous 16 development shapes; fresh 40 evaluation shapes have distinct CAD hashes and exclude all CAD documents in either previous development or previous 40-case evaluation. Parameters are chosen using development only.",
+  "frozen_before_experiments": true
+}

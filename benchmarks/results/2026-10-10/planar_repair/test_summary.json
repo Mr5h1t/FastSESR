@@ -1,0 +1,50 @@
+{
+  "baseline": {
+    "CD1_x100": 0.27743527734410434,
+    "CD2_x1e5": 0.5236815057579,
+    "Precision": 0.9533775833333332,
+    "Recall": 0.9525975833333333,
+    "F1_at_0_003": 0.9529837555478528,
+    "NC": 0.9860062705598522,
+    "triangles": 22458.1,
+    "boundary_edges": 54.025,
+    "boundary_edge_fraction": 0.002301785448373875,
+    "nonmanifold_edges": 69.95,
+    "nonmanifold_edge_fraction": 0.0022570741622152508,
+    "degenerate_faces": 0.0,
+    "SurfaceCD1_x100": 0.00044422608600408475,
+    "SurfaceCD2_x1e5": 0.001220921726830598
+  },
+  "strict_0.6": {
+    "CD1_x100": 0.2774146161652469,
+    "CD2_x1e5": 0.5237082499966007,
+    "Precision": 0.9532855833333332,
+    "Recall": 0.95254,
+    "F1_at_0_003": 0.9529088307936585,
+    "NC": 0.9859520834458081,
+    "triangles": 22440.65,
+    "boundary_edges": 56.025,
+    "boundary_edge_fraction": 0.002333022082913178,
+    "nonmanifold_edges": 44.175,
+    "nonmanifold_edge_fraction": 0.0014140773111301552,
+    "degenerate_faces": 0.0,
+    "SurfaceCD1_x100": 0.00047228847707525556,
+    "SurfaceCD2_x1e5": 0.0012997622492085415
+  },
+  "planar_repaired": {
+    "CD1_x100": 0.27742388090554004,
+    "CD2_x1e5": 0.523671546541591,
+    "Precision": 0.9532825,
+    "Recall": 0.9525378333333333,
+    "F1_at_0_003": 0.9529062166566308,
+    "NC": 0.986043667138354,
+    "triangles": 22440.875,
+    "boundary_edges": 45.6,
+    "boundary_edge_fraction": 0.002067612882831498,
+    "nonmanifold_edges": 35.825,
+    "nonmanifold_edge_fraction": 0.0012876118980557586,
+    "degenerate_faces": 0.0,
+    "SurfaceCD1_x100": 0.0004482639103564612,
+    "SurfaceCD2_x1e5": 0.0012371368494757003
+  }
+}

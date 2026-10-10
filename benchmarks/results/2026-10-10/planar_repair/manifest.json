@@ -1,0 +1,670 @@
+{
+  "protocol_sha256": "8d1537647aca596377fc8c81c5894bd61af3d92e000a40b78ea61655e3e38395",
+  "protocol": {
+    "seed": 20261010,
+    "development_samples": [
+      {
+        "name": "00053139_1945e4f3b59145d890905b9d_trimesh_009.ply",
+        "vertices": 2134,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00053139_1945e4f3b59145d890905b9d_trimesh_009.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00053139_1945e4f3b59145d890905b9d_trimesh_009.ply"
+      },
+      {
+        "name": "00035473_e5d0add05e794cab96bf1a71_trimesh_000.ply",
+        "vertices": 4282,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00035473_e5d0add05e794cab96bf1a71_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00035473_e5d0add05e794cab96bf1a71_trimesh_000.ply"
+      },
+      {
+        "name": "00020585_63916f67a00044a894aae2ff_trimesh_000.ply",
+        "vertices": 5969,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00020585_63916f67a00044a894aae2ff_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00020585_63916f67a00044a894aae2ff_trimesh_000.ply"
+      },
+      {
+        "name": "00056111_b885cff0664c4666975d653e_trimesh_000.ply",
+        "vertices": 7378,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00056111_b885cff0664c4666975d653e_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00056111_b885cff0664c4666975d653e_trimesh_000.ply"
+      },
+      {
+        "name": "00051873_920d8a06814e4ddeaa012a23_trimesh_007.ply",
+        "vertices": 8600,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00051873_920d8a06814e4ddeaa012a23_trimesh_007.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00051873_920d8a06814e4ddeaa012a23_trimesh_007.ply"
+      },
+      {
+        "name": "00010386_289cf5e5fc0246f19cd8bb75_trimesh_001.ply",
+        "vertices": 9803,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00010386_289cf5e5fc0246f19cd8bb75_trimesh_001.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00010386_289cf5e5fc0246f19cd8bb75_trimesh_001.ply"
+      },
+      {
+        "name": "00034428_01d7addfe23343f999026f90_trimesh_000.ply",
+        "vertices": 10978,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00034428_01d7addfe23343f999026f90_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00034428_01d7addfe23343f999026f90_trimesh_000.ply"
+      },
+      {
+        "name": "00058754_ec6875c3bb9d405789785b2b_trimesh_000.ply",
+        "vertices": 11964,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00058754_ec6875c3bb9d405789785b2b_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00058754_ec6875c3bb9d405789785b2b_trimesh_000.ply"
+      },
+      {
+        "name": "00041223_5b0154277ee14987bdbed000_trimesh_010.ply",
+        "vertices": 12882,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00041223_5b0154277ee14987bdbed000_trimesh_010.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00041223_5b0154277ee14987bdbed000_trimesh_010.ply"
+      },
+      {
+        "name": "00029044_914cae8642e24d87ad71989f_trimesh_005.ply",
+        "vertices": 13681,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00029044_914cae8642e24d87ad71989f_trimesh_005.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00029044_914cae8642e24d87ad71989f_trimesh_005.ply"
+      },
+      {
+        "name": "00031999_7231bfdc871d47feb9a4489c_trimesh_000.ply",
+        "vertices": 14351,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00031999_7231bfdc871d47feb9a4489c_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00031999_7231bfdc871d47feb9a4489c_trimesh_000.ply"
+      },
+      {
+        "name": "00036900_4893027908cc456f82087c02_trimesh_000.ply",
+        "vertices": 15107,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00036900_4893027908cc456f82087c02_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00036900_4893027908cc456f82087c02_trimesh_000.ply"
+      },
+      {
+        "name": "00026983_3f5d177b1de9411b9e5c4d0e_trimesh_000.ply",
+        "vertices": 15942,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00026983_3f5d177b1de9411b9e5c4d0e_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00026983_3f5d177b1de9411b9e5c4d0e_trimesh_000.ply"
+      },
+      {
+        "name": "00017462_28a7687e4fae472399c06676_trimesh_005.ply",
+        "vertices": 16863,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00017462_28a7687e4fae472399c06676_trimesh_005.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00017462_28a7687e4fae472399c06676_trimesh_005.ply"
+      },
+      {
+        "name": "00053548_6878aa6081024ca98c309660_trimesh_008.ply",
+        "vertices": 17803,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00053548_6878aa6081024ca98c309660_trimesh_008.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00053548_6878aa6081024ca98c309660_trimesh_008.ply"
+      },
+      {
+        "name": "00022672_f05484a2894d48eca5d703e4_trimesh_003.ply",
+        "vertices": 18669,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00022672_f05484a2894d48eca5d703e4_trimesh_003.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00022672_f05484a2894d48eca5d703e4_trimesh_003.ply"
+      }
+    ],
+    "test_samples": [
+      {
+        "name": "00001006_6962bc8aad2c4e27b046d5b4_trimesh_008.ply",
+        "vertices": 1277,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00001006_6962bc8aad2c4e27b046d5b4_trimesh_008.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00001006_6962bc8aad2c4e27b046d5b4_trimesh_008.ply"
+      },
+      {
+        "name": "00042668_a29ed51c78f5429e92496951_trimesh_041.ply",
+        "vertices": 2134,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00042668_a29ed51c78f5429e92496951_trimesh_041.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00042668_a29ed51c78f5429e92496951_trimesh_041.ply"
+      },
+      {
+        "name": "00045193_b69af8efe1044bc0a939de36_trimesh_002.ply",
+        "vertices": 2850,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00045193_b69af8efe1044bc0a939de36_trimesh_002.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00045193_b69af8efe1044bc0a939de36_trimesh_002.ply"
+      },
+      {
+        "name": "00006822_c1534e8543a94f33aeeae03e_trimesh_002.ply",
+        "vertices": 3708,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00006822_c1534e8543a94f33aeeae03e_trimesh_002.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00006822_c1534e8543a94f33aeeae03e_trimesh_002.ply"
+      },
+      {
+        "name": "00039797_adcb2fa3666b48bd8933f10c_trimesh_009.ply",
+        "vertices": 4427,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00039797_adcb2fa3666b48bd8933f10c_trimesh_009.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00039797_adcb2fa3666b48bd8933f10c_trimesh_009.ply"
+      },
+      {
+        "name": "00005277_a8ded82a1fd74021ac459ffb_trimesh_013.ply",
+        "vertices": 5053,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00005277_a8ded82a1fd74021ac459ffb_trimesh_013.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00005277_a8ded82a1fd74021ac459ffb_trimesh_013.ply"
+      },
+      {
+        "name": "00052990_e1f3fdac7cdf42b0b876329c_trimesh_004.ply",
+        "vertices": 5613,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00052990_e1f3fdac7cdf42b0b876329c_trimesh_004.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00052990_e1f3fdac7cdf42b0b876329c_trimesh_004.ply"
+      },
+      {
+        "name": "00021144_549f0c29542541baa6fdf3c9_trimesh_000.ply",
+        "vertices": 6021,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00021144_549f0c29542541baa6fdf3c9_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00021144_549f0c29542541baa6fdf3c9_trimesh_000.ply"
+      },
+      {
+        "name": "00054842_dee0bf07f7d64ced8e7389be_trimesh_000.ply",
+        "vertices": 6494,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00054842_dee0bf07f7d64ced8e7389be_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00054842_dee0bf07f7d64ced8e7389be_trimesh_000.ply"
+      },
+      {
+        "name": "00048922_5b10296f721a4f8c81b3a0ac_trimesh_003.ply",
+        "vertices": 7033,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00048922_5b10296f721a4f8c81b3a0ac_trimesh_003.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00048922_5b10296f721a4f8c81b3a0ac_trimesh_003.ply"
+      },
+      {
+        "name": "00036742_0f3d29b03c15430f85ba40c9_trimesh_000.ply",
+        "vertices": 7553,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00036742_0f3d29b03c15430f85ba40c9_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00036742_0f3d29b03c15430f85ba40c9_trimesh_000.ply"
+      },
+      {
+        "name": "00003702_6ebd53ae9f35478bb908be54_trimesh_001.ply",
+        "vertices": 8017,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00003702_6ebd53ae9f35478bb908be54_trimesh_001.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00003702_6ebd53ae9f35478bb908be54_trimesh_001.ply"
+      },
+      {
+        "name": "00023706_782c55a38ce7421faaeb2898_trimesh_003.ply",
+        "vertices": 8520,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00023706_782c55a38ce7421faaeb2898_trimesh_003.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00023706_782c55a38ce7421faaeb2898_trimesh_003.ply"
+      },
+      {
+        "name": "00032032_9f5bcf378f0e4944bb6907c2_trimesh_000.ply",
+        "vertices": 8778,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00032032_9f5bcf378f0e4944bb6907c2_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00032032_9f5bcf378f0e4944bb6907c2_trimesh_000.ply"
+      },
+      {
+        "name": "00041500_75151c13b7ea4add97fd4381_trimesh_001.ply",
+        "vertices": 9251,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00041500_75151c13b7ea4add97fd4381_trimesh_001.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00041500_75151c13b7ea4add97fd4381_trimesh_001.ply"
+      },
+      {
+        "name": "00054282_3ae9de8518614213919d8477_trimesh_001.ply",
+        "vertices": 9725,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00054282_3ae9de8518614213919d8477_trimesh_001.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00054282_3ae9de8518614213919d8477_trimesh_001.ply"
+      },
+      {
+        "name": "00054802_a404d23dc8534c99bcaf7dc3_trimesh_008.ply",
+        "vertices": 10202,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00054802_a404d23dc8534c99bcaf7dc3_trimesh_008.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00054802_a404d23dc8534c99bcaf7dc3_trimesh_008.ply"
+      },
+      {
+        "name": "00036372_98472b6a279349a2b942dedf_trimesh_000.ply",
+        "vertices": 10670,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00036372_98472b6a279349a2b942dedf_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00036372_98472b6a279349a2b942dedf_trimesh_000.ply"
+      },
+      {
+        "name": "00041996_2686654542df4ae39efd05b4_trimesh_003.ply",
+        "vertices": 11078,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00041996_2686654542df4ae39efd05b4_trimesh_003.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00041996_2686654542df4ae39efd05b4_trimesh_003.ply"
+      },
+      {
+        "name": "00021126_de3e556f2881489d9d102d69_trimesh_000.ply",
+        "vertices": 11557,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00021126_de3e556f2881489d9d102d69_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00021126_de3e556f2881489d9d102d69_trimesh_000.ply"
+      },
+      {
+        "name": "00054127_4f3398b65b35455f87824aa4_trimesh_000.ply",
+        "vertices": 11978,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00054127_4f3398b65b35455f87824aa4_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00054127_4f3398b65b35455f87824aa4_trimesh_000.ply"
+      },
+      {
+        "name": "00051397_dc398ce8e5354043a1e8d208_trimesh_003.ply",
+        "vertices": 12363,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00051397_dc398ce8e5354043a1e8d208_trimesh_003.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00051397_dc398ce8e5354043a1e8d208_trimesh_003.ply"
+      },
+      {
+        "name": "00028399_278929da359a45eca29d7de2_trimesh_000.ply",
+        "vertices": 12736,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00028399_278929da359a45eca29d7de2_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00028399_278929da359a45eca29d7de2_trimesh_000.ply"
+      },
+      {
+        "name": "00033036_767efcae9b9649fe961ebaab_trimesh_002.ply",
+        "vertices": 13138,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00033036_767efcae9b9649fe961ebaab_trimesh_002.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00033036_767efcae9b9649fe961ebaab_trimesh_002.ply"
+      },
+      {
+        "name": "00025485_765982d1aaef40448478d576_trimesh_002.ply",
+        "vertices": 13454,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00025485_765982d1aaef40448478d576_trimesh_002.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00025485_765982d1aaef40448478d576_trimesh_002.ply"
+      },
+      {
+        "name": "00000274_648a7c23a21f4e88bf25ffeb_trimesh_002.ply",
+        "vertices": 13849,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00000274_648a7c23a21f4e88bf25ffeb_trimesh_002.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00000274_648a7c23a21f4e88bf25ffeb_trimesh_002.ply"
+      },
+      {
+        "name": "00018694_5730a99bb83a42d19bd5d69c_trimesh_000.ply",
+        "vertices": 14221,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00018694_5730a99bb83a42d19bd5d69c_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00018694_5730a99bb83a42d19bd5d69c_trimesh_000.ply"
+      },
+      {
+        "name": "00017930_752778aeefb145dfb73e1e5c_trimesh_000.ply",
+        "vertices": 14563,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00017930_752778aeefb145dfb73e1e5c_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00017930_752778aeefb145dfb73e1e5c_trimesh_000.ply"
+      },
+      {
+        "name": "00026479_caa4977e55f24092ae104c1c_trimesh_000.ply",
+        "vertices": 14871,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00026479_caa4977e55f24092ae104c1c_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00026479_caa4977e55f24092ae104c1c_trimesh_000.ply"
+      },
+      {
+        "name": "00000699_cae88f0aaaf34de597863810_trimesh_000.ply",
+        "vertices": 15208,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00000699_cae88f0aaaf34de597863810_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00000699_cae88f0aaaf34de597863810_trimesh_000.ply"
+      },
+      {
+        "name": "00039882_a246390e46ec4d75b04a081b_trimesh_006.ply",
+        "vertices": 15527,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00039882_a246390e46ec4d75b04a081b_trimesh_006.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00039882_a246390e46ec4d75b04a081b_trimesh_006.ply"
+      },
+      {
+        "name": "00006278_1057ca83f2264404aa6cd16d_trimesh_000.ply",
+        "vertices": 15894,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00006278_1057ca83f2264404aa6cd16d_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00006278_1057ca83f2264404aa6cd16d_trimesh_000.ply"
+      },
+      {
+        "name": "00021041_51b9c363a70142c1b4e6f1a3_trimesh_000.ply",
+        "vertices": 16248,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00021041_51b9c363a70142c1b4e6f1a3_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00021041_51b9c363a70142c1b4e6f1a3_trimesh_000.ply"
+      },
+      {
+        "name": "00053988_c2b1b74c7fbd42248d454566_trimesh_001.ply",
+        "vertices": 16684,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00053988_c2b1b74c7fbd42248d454566_trimesh_001.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00053988_c2b1b74c7fbd42248d454566_trimesh_001.ply"
+      },
+      {
+        "name": "00033355_2e0f13ba549f4aff80269717_trimesh_000.ply",
+        "vertices": 17025,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00033355_2e0f13ba549f4aff80269717_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00033355_2e0f13ba549f4aff80269717_trimesh_000.ply"
+      },
+      {
+        "name": "00011966_8ee3fba81d5a4d61a14c44c2_trimesh_000.ply",
+        "vertices": 17435,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00011966_8ee3fba81d5a4d61a14c44c2_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00011966_8ee3fba81d5a4d61a14c44c2_trimesh_000.ply"
+      },
+      {
+        "name": "00040358_7fc6975da5374aa08376db88_trimesh_003.ply",
+        "vertices": 17879,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00040358_7fc6975da5374aa08376db88_trimesh_003.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00040358_7fc6975da5374aa08376db88_trimesh_003.ply"
+      },
+      {
+        "name": "00016374_5d383e5ea4d14a0bbf363339_trimesh_001.ply",
+        "vertices": 18216,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00016374_5d383e5ea4d14a0bbf363339_trimesh_001.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00016374_5d383e5ea4d14a0bbf363339_trimesh_001.ply"
+      },
+      {
+        "name": "00042723_7b73668bafbe495183f98bb8_trimesh_000.ply",
+        "vertices": 18499,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00042723_7b73668bafbe495183f98bb8_trimesh_000.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00042723_7b73668bafbe495183f98bb8_trimesh_000.ply"
+      },
+      {
+        "name": "00007066_d654438ec58a44d6a567dd51_trimesh_003.ply",
+        "vertices": 19083,
+        "pointcloud": "/home/syx/data/FastSESR/Data/PointClouds/ABC_test/00007066_d654438ec58a44d6a567dd51_trimesh_003.ply",
+        "ground_truth": "/home/syx/data/FastSESR/Data/ABC/test/00007066_d654438ec58a44d6a567dd51_trimesh_003.ply"
+      }
+    ],
+    "configs": [
+      {
+        "name": "baseline"
+      },
+      {
+        "name": "strict_0.6"
+      },
+      {
+        "name": "planar_repaired"
+      }
+    ],
+    "sample_count": 100000,
+    "development_sampling_seeds": 3,
+    "test_sampling_seeds": 3,
+    "timing_repeats": 3,
+    "selection_rule": "Parameters fixed before development. Report development and new test comparisons; do not tune on test. Optional repair preserves projected union coverage and seam incidences and must not increase whole-mesh indexed nonmanifold/boundary edges.",
+    "surface_distance_sample_count": 20000,
+    "split_note": "New 40 shapes have distinct CAD hashes and exclude all prior development/evaluation documents, including the adaptive-quality experiment.",
+    "frozen_before_experiments": true,
+    "plane_tolerance": 1e-06
+  },
+  "config": {
+    "delta": 0.0,
+    "rescale_delta": false,
+    "chunk_size": 2000,
+    "knn": 50,
+    "pretrained_active_keys": 183,
+    "pretrained_missing_active_keys": [],
+    "unused_checkpoint_keys": [
+      "bottleneck.gat_cell.att_mlp.0.bias",
+      "bottleneck.gat_cell.att_mlp.0.weight",
+      "bottleneck.gat_cell.att_mlp.2.bias",
+      "bottleneck.gat_cell.att_mlp.2.weight",
+      "bottleneck.gat_cell.lin_k.weight",
+      "bottleneck.gat_cell.lin_q.weight",
+      "bottleneck.gat_cell.lin_v.weight",
+      "bottleneck.gat_cell.out_mlp.0.bias",
+      "bottleneck.gat_cell.out_mlp.0.weight",
+      "bottleneck.gat_cell.out_mlp.2.bias",
+      "bottleneck.gat_cell.out_mlp.2.weight",
+      "bottleneck.gat_cell.step_scale",
+      "dec_flat.conv1.bias",
+      "dec_flat.conv1.weight",
+      "dec_flat.conv2.bias",
+      "dec_flat.conv2.weight",
+      "dec_flat.gn1.bias",
+      "dec_flat.gn1.weight",
+      "enc.l5.conv.weight",
+      "enc.l5.gn.bias",
+      "enc.l5.gn.weight",
+      "fp32.mlp.0.weight",
+      "fp32.mlp.1.bias",
+      "fp32.mlp.1.weight",
+      "fp32.mlp.3.weight",
+      "fp32.mlp.4.bias",
+      "fp32.mlp.4.weight",
+      "fp32.mlp.6.bias",
+      "fp32.mlp.6.weight"
+    ],
+    "checkpoint_args": {
+      "dataset": "ABC_train",
+      "delta": 0.0,
+      "rescale_delta": false,
+      "unet_k": 16,
+      "unet_ratio1": 0.25,
+      "unet_ratio2": 0.25,
+      "unet_hidden": 64,
+      "unet_T": 2,
+      "unet_K": 50,
+      "use_point_transformer": true,
+      "use_gat": false,
+      "gat_heads": 4,
+      "no_pyramid": true,
+      "Lembed": 8,
+      "use_q_as_feat": true,
+      "use_q_for_modulation": false,
+      "enable_quality_modulator": false,
+      "enable_q_feat": true,
+      "share_offset_former": true
+    }
+  },
+  "sources": {
+    "S2/ExtractFace.py": "2bd03a30f2185227c57f7c35903696721d2772af16217e9013f8bde808b6f007",
+    "S2/PlanarRepair.py": "f10f21a11cf60f49d6c46901d3f9ade3ccc87ad524d057866cf8213c8dd01330",
+    "S2_reconstruct.py": "91066db65845e156b980bed36c15f58bac8c95b8ea6e8838ed3f727b45dc57ce",
+    "benchmarks/compare_planar_repair.py": "d9cb1a8e945b10cf000cdec42ee711312b33e1078914a2ca7d7f30a1f2c3e098",
+    "benchmarks/compare_adaptive_quality.py": "415b12249385f4a1065904aea40916606c9ded66cfbe8aaf4d3e68fdb2000155",
+    "benchmarks/compare_extract_face.py": "681123163b9d6784afefe26258e8b050b1a0744a2c4d2d54599df30a36775038",
+    "benchmarks/compare_face_thresholds.py": "c1383cf7e4daa739bc311faa3c2960dc61504aef3bf02542db66df0145e85155"
+  },
+  "weights": {
+    "trained_models/model_knn50.pth": "195d7206b8c422e0c759f2f1ddaef515ee280270bf1339997c2cc7382820fcfe",
+    "runs/S2_train/model_best.pth": "44ace7062d9917374a6b0fcc742a441686bf5f1af522aeb77b5aebccc3f36359"
+  },
+  "shapely": "2.2.0",
+  "gpu_before": "NVIDIA GeForce RTX 5090, 32607 MiB, 5623 MiB, 0 %",
+  "input_sha256": {
+    "00053139_1945e4f3b59145d890905b9d_trimesh_009.ply": {
+      "pointcloud": "ae4929523cff1555c6a60cc19db30568a56d3539efcd34e37ca3272e45ea331d",
+      "ground_truth": "069c3b2a9b729227e1551e8c2a0e2eb3cc4066a35935df7203a2c3baf3028ebc"
+    },
+    "00035473_e5d0add05e794cab96bf1a71_trimesh_000.ply": {
+      "pointcloud": "a8df5c0d55e790f445aa64d715e701b91d5f9fb0ae2789b9bda2d9781f4e2988",
+      "ground_truth": "45400a2b2d25df86dee9c70ac975911ae3b2dee3b5241b02190c23bd0f0ed3b4"
+    },
+    "00020585_63916f67a00044a894aae2ff_trimesh_000.ply": {
+      "pointcloud": "b8f10df2b1580eef9927c775a5d4e4dc3e828461a2400b9d4cc3ecd3167ee3b8",
+      "ground_truth": "6f663c087e4e70e9564388991d93da0024138c5728645e479a1506a6eb02ff67"
+    },
+    "00056111_b885cff0664c4666975d653e_trimesh_000.ply": {
+      "pointcloud": "37225c9da4eb41b011a13718b0e7bb4a3dcdca1a3a0b3d11e9505a54a120836f",
+      "ground_truth": "93d6c61722c881346dcefbe20f1c748cd820cdf08f653f320ed3941b2ca198e2"
+    },
+    "00051873_920d8a06814e4ddeaa012a23_trimesh_007.ply": {
+      "pointcloud": "7c6a04eddc70185be6a87ffa57d3cce3ddd8803deb43ced9a2cdfdde7f8576c8",
+      "ground_truth": "c3dbbf597f1c10688e93156f3b3c3a5a32671be891c8dcecdd29ff29483055db"
+    },
+    "00010386_289cf5e5fc0246f19cd8bb75_trimesh_001.ply": {
+      "pointcloud": "a90a99c1af69f1a01a0578a07d3422458cefd0b37ae1695833ae053d2673bd32",
+      "ground_truth": "a6fbcd0b52c4858ffdc5b7d8aa64a445a60594951ad6a30bcaf5065b45448133"
+    },
+    "00034428_01d7addfe23343f999026f90_trimesh_000.ply": {
+      "pointcloud": "6c98ece756e6993e34a3c81eec131cfd469c1bcb7025b85379ae997aa88a4def",
+      "ground_truth": "752cd347fee293522e3d900077c1f7a13ed814b102b7c213825a12517bb3b6de"
+    },
+    "00058754_ec6875c3bb9d405789785b2b_trimesh_000.ply": {
+      "pointcloud": "2bba6012c5a2b2d84f231adf4d06d3f6672eb41c3dfb0f914e4603a51e107631",
+      "ground_truth": "15a5cd5390f86e8ced7dca2848f518be22b0340252764cce8379d87a43ee93d7"
+    },
+    "00041223_5b0154277ee14987bdbed000_trimesh_010.ply": {
+      "pointcloud": "fd047d8788ebcc003d2463a1fde5817685f50943cbb18b9d31b236d627ca61c9",
+      "ground_truth": "13e1dbabcefa7c49ed788b5da6f48898dd81c7910c72d8db0ec9c2f3aa98c5b7"
+    },
+    "00029044_914cae8642e24d87ad71989f_trimesh_005.ply": {
+      "pointcloud": "d478263afd050757cd056524a3dce10d2bad74cc4a7e75becbb45cc0f7b66f98",
+      "ground_truth": "6cc6e6f949a1304c94639952d2f3a8fa5729fa756dc35bc45390830432ab8ed5"
+    },
+    "00031999_7231bfdc871d47feb9a4489c_trimesh_000.ply": {
+      "pointcloud": "8367c9ec0cc65cf4ee4e9fec39a9bb0afacafb7385c596d7fe339512175a380a",
+      "ground_truth": "0385cd84e560b94fa311b4370a11f22a59599528934e2aa197ef16311faac5b4"
+    },
+    "00036900_4893027908cc456f82087c02_trimesh_000.ply": {
+      "pointcloud": "ab9d27dc065ea1841614e62c585c9a70c40c9018b270e290577dad240a1e674d",
+      "ground_truth": "f3a2f5881dfcf4ac60fcc3cd2c52a2f1b1b2837db08ae4c15072674a31931ef7"
+    },
+    "00026983_3f5d177b1de9411b9e5c4d0e_trimesh_000.ply": {
+      "pointcloud": "002f3f829a0874a5998cc17346f22671b9754e5d0941526ccf5e05a8e9abb27b",
+      "ground_truth": "bd3ffd5242626645d48ff7b7110094861c9626fafb8b8b444ffd15427c0a1bde"
+    },
+    "00017462_28a7687e4fae472399c06676_trimesh_005.ply": {
+      "pointcloud": "3b29af3994759f6df1fa04c22b8ff79598c24607527cc1b8b24d7cbdde7f42be",
+      "ground_truth": "0d786c8fc4764c7a5c3c2adc336c020fef91f8e68f57ec1b668457a80c79c62c"
+    },
+    "00053548_6878aa6081024ca98c309660_trimesh_008.ply": {
+      "pointcloud": "2913e13e1f85f9d736f6e5125c416f76a4e74ade4c4ba7c308907c9469a1105d",
+      "ground_truth": "f3b1f5b9c6844a3c8eb896f16143a26d25d524ed486ab3ba7781d5b719fe80ea"
+    },
+    "00022672_f05484a2894d48eca5d703e4_trimesh_003.ply": {
+      "pointcloud": "100f0846fd2372656071985c8e55cfddf30044467b18c6f44ae13168f258bd94",
+      "ground_truth": "c8db3fe87421c94e040c4a535754326a75700cdf0fc49e0dafb444a0d01c42ab"
+    },
+    "00001006_6962bc8aad2c4e27b046d5b4_trimesh_008.ply": {
+      "pointcloud": "f95c7869703d234d029adeeefe9da03c37504894c40a422f419d68f5fb17e148",
+      "ground_truth": "6bd183c063a917c773fbd03b9ffb261b559a3aa07a299a9a439e10fa2c1c7e7d"
+    },
+    "00042668_a29ed51c78f5429e92496951_trimesh_041.ply": {
+      "pointcloud": "ae4929523cff1555c6a60cc19db30568a56d3539efcd34e37ca3272e45ea331d",
+      "ground_truth": "069c3b2a9b729227e1551e8c2a0e2eb3cc4066a35935df7203a2c3baf3028ebc"
+    },
+    "00045193_b69af8efe1044bc0a939de36_trimesh_002.ply": {
+      "pointcloud": "68731ccb67ab309083cfbb363448d7d73d42e9c8b46c8e94078831d8c0a6d4a7",
+      "ground_truth": "a5472e4832059f80584f5d390055d65b1cb3664ee0283e5439310ee4f295730f"
+    },
+    "00006822_c1534e8543a94f33aeeae03e_trimesh_002.ply": {
+      "pointcloud": "9a79ea408e3e283a6c07256d173e8eda8b6d61876ba661cb712c9c34d0f32801",
+      "ground_truth": "9596e84e5d9b4813f249fe0fb92fdcab53b099b93e8aee6d5418ae02ab4ae589"
+    },
+    "00039797_adcb2fa3666b48bd8933f10c_trimesh_009.ply": {
+      "pointcloud": "fb47a00ed54924f69aa0e0b3f1b9faea33b4671660c7a9b1de8cb7876a3e2db9",
+      "ground_truth": "17eb78b587c79dcc77878eccc93c35149877118f4aa77fb87c83e586d93be4a5"
+    },
+    "00005277_a8ded82a1fd74021ac459ffb_trimesh_013.ply": {
+      "pointcloud": "519da2342eed57003f6db8d5d2e1320b8ac1eea0e0d33a6a144abc2f5f23bcfa",
+      "ground_truth": "9603be4f9b827aaeaf031acc6d1ca8084d654fb4ea6879aa4a2b3ab4659cfd79"
+    },
+    "00052990_e1f3fdac7cdf42b0b876329c_trimesh_004.ply": {
+      "pointcloud": "a9ce83f194fbf14a8f1a159e021a2117df65547ffd77c3debe3430073fbe2a68",
+      "ground_truth": "01179aa33b1c5f801b9140fcb25d7f7f30298145b7125355d1972d81a9318065"
+    },
+    "00021144_549f0c29542541baa6fdf3c9_trimesh_000.ply": {
+      "pointcloud": "25c96f66324f13f2547e44115e698df6f064e07d78806736f403ee88a2418457",
+      "ground_truth": "469710218c4db01af930eff5b66eed82001b8c27d8106e49ec0ba08c31d6c919"
+    },
+    "00054842_dee0bf07f7d64ced8e7389be_trimesh_000.ply": {
+      "pointcloud": "55791762afc6973c4c000abb8450aaeac646ff1b72e302b2b114693ec17a00b6",
+      "ground_truth": "5dc48ba9e6b2e61836390e05dce8aab7fe20a873eb941b2cc4031e6fcb2ea875"
+    },
+    "00048922_5b10296f721a4f8c81b3a0ac_trimesh_003.ply": {
+      "pointcloud": "bc458090a258ccac7dc9ae959520e9dc1fe3858a50cba9f0c1ec0f5dab449418",
+      "ground_truth": "27991e6c8e41bbefbe3c6293030e0798ef4343fb99354b26c180a4110890c672"
+    },
+    "00036742_0f3d29b03c15430f85ba40c9_trimesh_000.ply": {
+      "pointcloud": "a084d5d0990fe09c53385abde169ee57e6003be452f145fdd08a27007ff225a7",
+      "ground_truth": "69985a783cb48f15c7bba82f9c905f0d1ebe31d5412d033fe5b9c6120ef54b85"
+    },
+    "00003702_6ebd53ae9f35478bb908be54_trimesh_001.ply": {
+      "pointcloud": "207df847be24fa0dfaadbffafee4b7491ebdfa57d9c5dd33917f26cc1f68992e",
+      "ground_truth": "59b3e9b7d7b6cd67e3080e7b4a70863ee080a8c92fbca4a4e40fe555f2808703"
+    },
+    "00023706_782c55a38ce7421faaeb2898_trimesh_003.ply": {
+      "pointcloud": "b4d4fd15360c004092674f5553c0a62031cf5725c56c9dd768d4012c5b85e5dc",
+      "ground_truth": "d97754b2e493c6ab2f5b25d75c1970748c887f2428b8c53d9aa8e22ea17b622e"
+    },
+    "00032032_9f5bcf378f0e4944bb6907c2_trimesh_000.ply": {
+      "pointcloud": "5444ccd2fb34257d836567246462d1dac7a0d51ef5cf57a9fb7543c580798144",
+      "ground_truth": "94b313035f2d4fe5e6fdfc908e1eb8cbe367f8a7500a58a45da931e6dc94e9a7"
+    },
+    "00041500_75151c13b7ea4add97fd4381_trimesh_001.ply": {
+      "pointcloud": "40deadcacbc18484db5dba92484457ac96ed015a7403be43e010b97c5e287cc5",
+      "ground_truth": "7c06ee011bbdd6f4ea87dfe90004a677bff12ceb72a50b34d8e4c806a02c1e68"
+    },
+    "00054282_3ae9de8518614213919d8477_trimesh_001.ply": {
+      "pointcloud": "576a51d815c2aa2a64117ef460d573f0f08da7a6f847203355f3a85276d961fa",
+      "ground_truth": "0792a7e95d6ae017b3da8bb1a535fdf1d4adfee9ab00501658335699204afd00"
+    },
+    "00054802_a404d23dc8534c99bcaf7dc3_trimesh_008.ply": {
+      "pointcloud": "f922ee69b8c8ba5a1a1fbeec9700aa2c50f370967b4c504e2db41c21469b58f1",
+      "ground_truth": "19e3f0b8b586e370163ee653af8c555a80061ce40ea80e9e7fc5ed16683509cc"
+    },
+    "00036372_98472b6a279349a2b942dedf_trimesh_000.ply": {
+      "pointcloud": "5949552d8c74676ac50002c5a6f85c010986ad09d4c466a47e68691e866475d8",
+      "ground_truth": "7770bfa5293daec913505a42f4494f1b3b96c11af3e05a0b04488969dc0cdba3"
+    },
+    "00041996_2686654542df4ae39efd05b4_trimesh_003.ply": {
+      "pointcloud": "9f6602bb0a6e4bae9d322c4a144d67146166b934d0af2779c5d5f6bb16fce55a",
+      "ground_truth": "8ad001a3c1d9add39f60735836d4bca53c65a529e04bc50a0c9d6443cd9405e2"
+    },
+    "00021126_de3e556f2881489d9d102d69_trimesh_000.ply": {
+      "pointcloud": "b09320d36b3645e2d6df730c6cd6d94724dd1b2134860645f66b7a4d1339767c",
+      "ground_truth": "a255b4224215d00ad75a83f38286126358283b253be6ff41771097ca15500a3b"
+    },
+    "00054127_4f3398b65b35455f87824aa4_trimesh_000.ply": {
+      "pointcloud": "d5f20a36cf799afce02f659a82f43959bcd5923ee6363a5296b5ba2d0fee62d0",
+      "ground_truth": "8bbe7020f9eb234ee0eeef8670e049e9ade5b940bd2fd6062783b1d5eea634b3"
+    },
+    "00051397_dc398ce8e5354043a1e8d208_trimesh_003.ply": {
+      "pointcloud": "6161f2f6014cedb624c4819c032838cdb92baf166ffef0628239465c327eb2d2",
+      "ground_truth": "5644b9e1c30003f85aa0e65992c6e97d4f99dc1e01667032c2ae7913190b0f08"
+    },
+    "00028399_278929da359a45eca29d7de2_trimesh_000.ply": {
+      "pointcloud": "9b19996d16e90339db746f2ba7945caf47d579420803a7992660672c8671cf95",
+      "ground_truth": "0cfbb7d49060c7ce9435f6da47fdc9d2a01f2969fe9eba9d8e6b1a680d86e989"
+    },
+    "00033036_767efcae9b9649fe961ebaab_trimesh_002.ply": {
+      "pointcloud": "469ac4096980ffbd1e59191cf1363a119936fcbddbfac84d2bca70027554396a",
+      "ground_truth": "be77af49f2e6405b9e2d930ded2fdfdc3568694a678318abd20025aa47aca0bd"
+    },
+    "00025485_765982d1aaef40448478d576_trimesh_002.ply": {
+      "pointcloud": "1bc1753cda95b415bafcc4b8f6366eb3c9ede9dbcd500ac2e94e5f5e7bfa3c26",
+      "ground_truth": "146bf2c245ae7e5a61a07381805a413c17f7f550eac523321d9e2cd2e4402052"
+    },
+    "00000274_648a7c23a21f4e88bf25ffeb_trimesh_002.ply": {
+      "pointcloud": "7e7dd4d0d5547fb91e029ad617bc646595f698c2546d6facdcc5139842d805b3",
+      "ground_truth": "d5112e94fb6150db6b536484e720c46b53bc6034452747f07b61caee70518a34"
+    },
+    "00018694_5730a99bb83a42d19bd5d69c_trimesh_000.ply": {
+      "pointcloud": "b65f77355489f660bfd7ee7451a7d4b60f95350692c0b15670fa5ce83ec037f3",
+      "ground_truth": "51478eb8649071581d71dbc34e0ed35dd63b18cebd0e30c4d12023895ae68977"
+    },
+    "00017930_752778aeefb145dfb73e1e5c_trimesh_000.ply": {
+      "pointcloud": "0c8314a868659eca1e0cefd36f4cda4366f906748b37b18afe33b139f3f9d663",
+      "ground_truth": "ff85989a7050f66b6cd08fb2a387a7aec57a91b7809f7c469bbcd444405ebfd7"
+    },
+    "00026479_caa4977e55f24092ae104c1c_trimesh_000.ply": {
+      "pointcloud": "429e1fdf488274c57fbc643d1c03888252c3f92dcb58fa9aa54ae5cf8f7236ae",
+      "ground_truth": "b8c8cd320bea93d718f1930b8490641c9c7ffdcc50c3870a45d2173e75b9e3ed"
+    },
+    "00000699_cae88f0aaaf34de597863810_trimesh_000.ply": {
+      "pointcloud": "381a03c92a081f234cb74bfe24f66c35b5c805707f9c7cd03378f8e64af58ebf",
+      "ground_truth": "2b73913a16cbc70690bd36f24060cadbfd56e28ca6a9defeb7af146e2b9aff0b"
+    },
+    "00039882_a246390e46ec4d75b04a081b_trimesh_006.ply": {
+      "pointcloud": "5101239aafa7c6031d9f84f337a83d14459b442bb52289a404fefd739e0541bd",
+      "ground_truth": "44a7a6286fd723da1ba07b1105ca9319ce64595fae2747b4d7f01630e8821459"
+    },
+    "00006278_1057ca83f2264404aa6cd16d_trimesh_000.ply": {
+      "pointcloud": "0eea4bc560cc131e3150a28fafda1ea7a2f2fa72c2321125ef69f9b31ab14372",
+      "ground_truth": "6079c61a56aee6a5eeac2cca68fde34808359be804cb9b8cfc10665ac2af063d"
+    },
+    "00021041_51b9c363a70142c1b4e6f1a3_trimesh_000.ply": {
+      "pointcloud": "0656c99dba16d6abc14db59338e6c829dadd875bf99073d5073f8fb80244f137",
+      "ground_truth": "65f35332e03ca2dfc506693c9466dd3277a6fc35dc697d05eaa19e5563fcd95c"
+    },
+    "00053988_c2b1b74c7fbd42248d454566_trimesh_001.ply": {
+      "pointcloud": "e756c07fa53a4b903bbb903c7979ba008994370bf7bf61bf534ad0d3b0aad55f",
+      "ground_truth": "8eee00aec936cd17acd0b6656e417d8bfe52955e3411c5e540283558cd8f3a8a"
+    },
+    "00033355_2e0f13ba549f4aff80269717_trimesh_000.ply": {
+      "pointcloud": "d6c6fc109c23ba2ee43d04bd32f703ed4ab2cffb9753780f147938cacaff3830",
+      "ground_truth": "26db0c2c1827ceb5f1742789bed30e37c379ad7a8cc4e141366a8ad80980b948"
+    },
+    "00011966_8ee3fba81d5a4d61a14c44c2_trimesh_000.ply": {
+      "pointcloud": "51d264659670ee1215ffd21c325d2d97de5f23822d173d7c278d0204eb37f114",
+      "ground_truth": "909c7ee8c2cde3e1ab7d2787fd6213faeb3de540ab2b412d90c370ff2532dca0"
+    },
+    "00040358_7fc6975da5374aa08376db88_trimesh_003.ply": {
+      "pointcloud": "41e795c76751bf1a9730031b81c191c5c9582d2c29c46c78f73fc751e7916176",
+      "ground_truth": "87420de8695f56501b889eee64c224f743c44812c4d1b554aeace743db544bb9"
+    },
+    "00016374_5d383e5ea4d14a0bbf363339_trimesh_001.ply": {
+      "pointcloud": "2bf6be878dc6fa43d46fdb3774a03913a48b8b55382976f3af1dfe871288539b",
+      "ground_truth": "45fcbb13f8da36108890533a3c5737cc10476514a8c25bf742838e26cf8d26cb"
+    },
+    "00042723_7b73668bafbe495183f98bb8_trimesh_000.ply": {
+      "pointcloud": "9b840be6192ba491d9b9439b92cb211d704f6ef39ab05829325611ceea27a503",
+      "ground_truth": "6a29c8ab7b02e6d9b1c611cd244211abcd88e51b0e35eefb4e2e29adfa4b3de2"
+    },
+    "00007066_d654438ec58a44d6a567dd51_trimesh_003.ply": {
+      "pointcloud": "25bf204b379294cfba331814fd3a7c64efff6b164bd0f7e4c81c3abae214c0c0",
+      "ground_truth": "43cbf681718236b04f9d985396e5c53ca9e849a77aac81df4bf3a28426f1ad7f"
+    }
+  },
+  "default_matches_original_cli": true,
+  "parameters_fixed_before_test": true,
+  "gpu_after": "NVIDIA GeForce RTX 5090, 32607 MiB, 5633 MiB, 99 %"
+}

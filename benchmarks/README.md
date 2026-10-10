@@ -1,6 +1,6 @@
 # Local FastSESR improvements and experiments
 
-This branch contains two independent changes to FastSESR:
+This branch contains optional improvements and recorded experiments:
 
 1. **On-demand triangle construction:** construct only the two triangle candidates
    consumed by extraction, preserving the original score sort and output faces.
@@ -14,12 +14,25 @@ This branch contains two independent changes to FastSESR:
    boundary edges increased. F1 and CD differences were small; there is no
    demonstrated stable accuracy improvement. Defaults remain 0.8/0.5/120.
 
+3. **Planar overlap repair:** optional CPU postprocessing that retains vertex
+   positions and checks coverage, seams and global indexed edge counts. The
+   independent 38-file subset reduced mean non-manifold edges by 50.04% and
+   boundary edges by 15.21%. Sampled CD differences include zero in their paired
+   intervals; continuous-surface CD1 increased by 0.93%, and runtime increased
+   from 0.367 to 1.007 seconds. Default behavior remains unchanged.
+4. **Geometry-adaptive threshold trial:** eleven development configurations did
+   not improve accuracy within the constraints. The selected control retained
+   weight zero. The negative trial and its executed source snapshots are saved.
+
 Recorded reports and evidence:
 
 - [Performance report](results/2026-10-09/full/REPORT.md)
 - [Performance comparison CSV](results/2026-10-09/full/comparison.csv)
 - [Threshold report](results/2026-10-10/thresholds/REPORT.md)
 - [Threshold comparison CSV](results/2026-10-10/thresholds/comparison.csv)
+- [Planar repair report](results/2026-10-10/planar_repair/REPORT.md)
+- [Deduplicated planar comparison](results/2026-10-10/planar_repair/heldout_comparison.csv)
+- [Adaptive negative result](results/2026-10-10/adaptive_quality/REPORT.md)
 
 The reports, raw metric/timing CSVs, figures, sample selections and source/weight
 hash manifests are versioned. Local point clouds and reconstructed mesh outputs
@@ -33,6 +46,7 @@ From the project root in an environment satisfying the project dependencies:
 ```bash
 OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 MKL_NUM_THREADS=4 \
 python benchmarks/test_extract_face.py
+python benchmarks/test_planar_repair.py
 ```
 
 The exact pre-optimization extractor is retained in
@@ -55,3 +69,9 @@ through the official reconstruction entry point and verify the active pretrained
 parameters. See the individual reports for all arguments and evaluation limits.
 
 These are personal experiment results, not upstream claims or default changes.
+
+The planar experiment originally selected different CAD document names. A later
+byte-hash audit found two inputs duplicated across experiment lists. The formal
+planar report excludes those files using a metric-independent rule and retains
+all 40 original records. Earlier reports remain historical records; distinct
+file names alone should not be interpreted as proof of distinct geometry.

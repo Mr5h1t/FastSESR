@@ -1,0 +1,10 @@
+{
+  "selected": {
+    "name": "baseline",
+    "quality_weight": 0.0,
+    "quality_target": 0.2,
+    "confidence_top2": 0.5
+  },
+  "selection_rule": "Minimize mean development CD1_x100 averaged over 3 surface-sampling seeds. Require F1 >= baseline-0.0005, Precision >= baseline-0.0005, boundary_edge_fraction <= baseline+0.0002, and point-to-mesh SurfaceCD1_x100 <= baseline*1.01+1e-7. Baseline participates; tie prefers baseline. Freeze before any new-test evaluation.",
+  "test_samples_evaluated": 0
+}
